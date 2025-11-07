@@ -1,4 +1,4 @@
-package com.salesforce.tesa.salesforce;
+package com.salesforce.tesa.salesforce.steps;
 
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;
@@ -12,7 +12,7 @@ import static io.cucumber.core.options.Constants.*;
 @SelectClasspathResource("/features/authentication/inicio_sesion.feature")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.salesforce.tesa.stepdefinitions,com.salesforce.tesa.hooks")
 @ConfigurationParameter(key = OBJECT_FACTORY_PROPERTY_NAME, value = "io.cucumber.guice.GuiceFactory")
-@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "io.cucumber.core.plugin.SerenityReporterParallel,pretty,timeline:target/test-results/timeline")
+@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "io.cucumber.core.plugin.SerenityReporterParallel,pretty,timeline:build/test-results/timeline")
 
-public class E2ERunner {
+public class InicioSesionRunner {
 }

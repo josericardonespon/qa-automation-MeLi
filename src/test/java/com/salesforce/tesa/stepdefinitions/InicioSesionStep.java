@@ -10,6 +10,7 @@ import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.ensure.Ensure;
 
+import static com.salesforce.tesa.userintefaces.InicioSesionPage.*;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class InicioSesionStep {
@@ -27,7 +28,7 @@ public class InicioSesionStep {
 
     @Entonces("el usuario accede a Salesforce")
     public void accedeALaPaginaPrincipalDeLaORG() {
-        Ensure.that(true).isTrue();
+        Ensure.that(BARRA_CERRAR_SESION).isDisplayed();
     }
 
 }

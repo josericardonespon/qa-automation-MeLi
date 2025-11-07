@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.salesforce.tesa</groupId>
     <artifactId>automation-MeLi</artifactId>
-    <version>1.0</version>
+    <version>1.0</versi
     <packaging>jar</packaging>
-    <name>Telefonica Automation</name>
+    <name>MeLi</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

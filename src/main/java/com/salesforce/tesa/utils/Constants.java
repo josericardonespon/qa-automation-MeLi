@@ -4,5 +4,6 @@ public final class Constants {
 
     private Constants() {
     }
-    public static final String URL_UAT = "https://test.salesforce.com/";
+    public static final String URL = "https://test.salesforce.com/";
+
 }
