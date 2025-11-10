@@ -4,6 +4,12 @@ import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
 public class InicioSesionPage {
+    public static final Target INPUT_USER= Target.the("input user")
+            .located(By.xpath("//input[@id='username']"));
+    public static final Target INPUT_PASSWORD= Target.the("input user")
+            .located(By.xpath("//input[@id='password']"));
+    public static final Target BTN_LOGIN_SALESFORCE= Target.the("button login salesforce")
+            .located(By.xpath("//input[@id='Login']"));
     public static final Target INPUT_SEARCH= Target.the("Quick search input")
             .located(By.xpath("//input[@placeholder='Search Setup']"));
     public static final Target SEARCH_RESULT= Target.the("Quick search input")
