@@ -1,5 +1,6 @@
 package com.salesforce.tesa.interactions;
 
+import net.serenitybdd.annotations.Step;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.actions.Click;
@@ -28,7 +29,9 @@ public class HacerClickInteraction implements Interaction {
         this(targetElement, 30, false);
     }
 
+    // 🔹 Agregamos la anotación @Step para generar evidencias
     @Override
+    @Step("{0} hace clic en el elemento '#targetElement' (espera: {waitSeconds}s, JavaScript: {useJavaScriptClick})")
     public <T extends Actor> void performAs(T actor) {
         try {
             actor.attemptsTo(
@@ -40,7 +43,7 @@ public class HacerClickInteraction implements Interaction {
                             .otherwise(Click.on(targetElement))
             );
         } catch (Exception e) {
-            throw new RuntimeException("An unexpected error occurred while clicking the element: " + targetElement, e);
+            throw new RuntimeException("Error al hacer clic en el elemento: " + targetElement, e);
         }
     }
 
