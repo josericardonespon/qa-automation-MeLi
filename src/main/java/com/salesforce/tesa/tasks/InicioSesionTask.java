@@ -45,7 +45,7 @@ public class InicioSesionTask implements Task {
                 Switch.toParentFrame(),
                 WaitUntil.the(WELCOME_ABOGADO, isVisible()).forNoMoreThan(Duration.ofSeconds(60))
         );
-                ;
+
     }
 
     public static InicioSesionTask conCredencialesValidas() {
