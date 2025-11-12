@@ -20,9 +20,7 @@ public class AcuerdosPage {
     public static final Target IR_EVENTO_ACUERDOS = Target.the("link Acuerdo createdo")
             .located(By.xpath("//span[contains(normalize-space(.),'Ir al nuevo evento')]//a[normalize-space(text())='Acuerdos']"));
     public static final Target VISTA_ACUERDOS = Target.the("Vista de acuerdos")
-            .located(By.xpath(" (//div[@class='slds-grid slds-col slds-has-flexi-truncate'" +
-                    "    and contains(.,'Evento')" +
-                    "    and contains(.,'Acuerdo')])[last()]"));
+            .located(By.xpath("(//div[@class='slds-grid slds-col slds-has-flexi-truncate' and contains(.,'Evento') and contains(.,'Acuerdo')])[last()]"));
 
 
 

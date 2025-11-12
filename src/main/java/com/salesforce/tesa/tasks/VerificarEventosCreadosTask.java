@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static com.salesforce.tesa.userintefaces.salesforce.AcuerdosPage.*;
+import static com.salesforce.tesa.userintefaces.salesforce.AudienciaPage.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class VerificarEventosCreadosTask implements Task {
@@ -35,7 +36,10 @@ public class VerificarEventosCreadosTask implements Task {
 
 
             case "audiencia":
-                // Esperar o validar que se muestre la vista o etiqueta de Audiencia
+                actor.attemptsTo(
+                        HacerClickInteraction.on(IR_EVENTO_AUDIENCIA).withOptions(30, true),
+                        WaitUntil.the(VISTA_AUDIENCIA, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
+                );
                 break;
 
             case "decisión":
