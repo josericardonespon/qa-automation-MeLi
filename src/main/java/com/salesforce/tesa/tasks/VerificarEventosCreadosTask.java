@@ -9,6 +9,7 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 import static com.salesforce.tesa.userintefaces.salesforce.AcuerdosPage.*;
 import static com.salesforce.tesa.userintefaces.salesforce.AudienciaPage.*;
 import static com.salesforce.tesa.userintefaces.salesforce.DecisionPage.*;
+import static com.salesforce.tesa.userintefaces.salesforce.MultasPage.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class VerificarEventosCreadosTask implements Task {
@@ -47,6 +48,12 @@ public class VerificarEventosCreadosTask implements Task {
                 actor.attemptsTo(
                         HacerClickInteraction.on(IR_EVENTO_DECISION).withOptions(30, true),
                         WaitUntil.the(VISTA_DECISION, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
+                );
+                break;
+            case "multas":
+                actor.attemptsTo(
+                        HacerClickInteraction.on(IR_EVENTO_MULTAS).withOptions(30, true),
+                        WaitUntil.the(VISTA_MULTAS, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
                 );
                 break;
 

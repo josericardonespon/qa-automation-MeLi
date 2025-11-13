@@ -17,4 +17,5 @@ Característica: Creación de eventos en Salesforce
       | Acuerdos   |
       | Audiencia  |
       | Decisión   |
+      | Multas     |
 
