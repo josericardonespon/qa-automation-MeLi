@@ -1,14 +1,17 @@
 package com.salesforce.tesa.tasks;
 
 import com.salesforce.tesa.interactions.*;
+import com.salesforce.tesa.userintefaces.salesforce.AcuerdosPage;
 import com.salesforce.tesa.utils.CargarArchivoUtil;
 import com.salesforce.tesa.utils.FechaUtil;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
+import net.serenitybdd.screenplay.targets.Target;
 
 import static com.salesforce.tesa.userintefaces.salesforce.AcuerdosPage.*;
 import static com.salesforce.tesa.userintefaces.salesforce.AudienciaPage.*;
+import static com.salesforce.tesa.userintefaces.salesforce.DecisionPage.*;
 import static com.salesforce.tesa.userintefaces.salesforce.Global.*;
 
 public class CrearEventosTask implements Task {
@@ -29,11 +32,8 @@ public class CrearEventosTask implements Task {
     public <T extends Actor> void performAs(T actor) {
         switch (tipoEvento.toLowerCase()) {
             case "acuerdos":
+                crearEventoBase(actor, RADIO_ACUERDOS);
                 actor.attemptsTo(
-                        HacerClickInteraction.on(BUTTON_NEW_EVENT).withOptions(30, true),
-                        HacerClickInteraction.on(RADIO_ACUERDOS).withOptions(30, true),
-                        HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, true),
-                        EscribirFechaInteraction.en(INPUT_FECHA_INICIO,FechaUtil.obtenerFechaPosterior(3)),
                         HacerClickInteraction.on(COMBO_RESULT_AGREEMENT).withOptions(30, false),
                         HacerClickInteraction.on(OPTION_PAGA_LEGALES).withOptions(30, false),
                         HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
@@ -57,11 +57,29 @@ public class CrearEventosTask implements Task {
                 break;
 
             case "decisión":
-                // lógica específica para crear decisión
+                crearEventoBase(actor, RADIO_DECISION);
+                actor.attemptsTo(
+                        HacerClickInteraction.on(COMBO_RESULT_DECISION).withOptions(30, false),
+                        HacerClickInteraction.on(OPTION_FAVORABLE_MELI).withOptions(30, false),
+                        HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
+                        CargarArchivoInteraction.from(rutaArchivo, INPUT_FILE),
+                        HacerClickInteraction.on(BTN_ARCHIVO_LISTO).withOptions(30, true),
+                        HacerClickInteraction.on(BUTTON_GUARDAR).withOptions(30, true)
+                );
                 break;
 
             default:
                 throw new IllegalArgumentException("Tipo de evento no reconocido: " + tipoEvento);
         }
+    }
+
+    private <T extends Actor> void crearEventoBase(T actor, Target radioButton){
+        actor.attemptsTo(
+                HacerClickInteraction.on(BUTTON_NEW_EVENT).withOptions(30, true),
+                HacerClickInteraction.on(radioButton).withOptions(30, true),
+                HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, true),
+                EscribirFechaInteraction.en(INPUT_FECHA_INICIO, FechaUtil.obtenerFechaPosterior(3))
+
+        );
     }
 }
