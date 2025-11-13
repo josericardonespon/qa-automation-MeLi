@@ -15,4 +15,5 @@ Característica: Creación de eventos en Salesforce
     Ejemplos:
       | tipoEvento |
       | Acuerdos   |
+      | Audiencia  |
 

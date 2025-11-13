@@ -36,7 +36,7 @@ public class InicioSesionTask implements Task {
                 HacerClickInteraction.on(BTN_LOGIN_SALESFORCE),
                 NavegarUrlInteraction.navegarUrl(URL_SETUP),
                 WaitUntil.the(INPUT_SEARCH, isVisible()).forNoMoreThan(Duration.ofSeconds(15)),
-                InsertarInteraction.theValue("Abogado Externo").into(INPUT_SEARCH),
+                InsertarInteraction.theValue("Abogado Externo").into(INPUT_SEARCH).withOptions(30,true),
                 HacerClickInteraction.on(SEARCH_RESULT).withOptions(60,true),
                 WaitUntil.the(IFRAME_ABOGADO, isPresent()).forNoMoreThan(Duration.ofSeconds(60)),
                 Switch.toFrame(IFRAME_ABOGADO.resolveFor(actor)),
