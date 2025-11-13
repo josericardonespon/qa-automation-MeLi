@@ -13,6 +13,7 @@ import static com.salesforce.tesa.userintefaces.salesforce.AcuerdosPage.*;
 import static com.salesforce.tesa.userintefaces.salesforce.AudienciaPage.*;
 import static com.salesforce.tesa.userintefaces.salesforce.DecisionPage.*;
 import static com.salesforce.tesa.userintefaces.salesforce.Global.*;
+import static com.salesforce.tesa.userintefaces.salesforce.MultasPage.*;
 
 public class CrearEventosTask implements Task {
 
@@ -61,6 +62,16 @@ public class CrearEventosTask implements Task {
                 actor.attemptsTo(
                         HacerClickInteraction.on(COMBO_RESULT_DECISION).withOptions(30, false),
                         HacerClickInteraction.on(OPTION_FAVORABLE_MELI).withOptions(30, false),
+                        HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
+                        CargarArchivoInteraction.from(rutaArchivo, INPUT_FILE),
+                        HacerClickInteraction.on(BTN_ARCHIVO_LISTO).withOptions(30, true),
+                        HacerClickInteraction.on(BUTTON_GUARDAR).withOptions(30, true)
+                );
+                break;
+            case "multas":
+                crearEventoBase(actor, RADIO_MULTAS);
+                actor.attemptsTo(
+                        InsertarInteraction.theValue("1000").into(MONTO_MULTA).withOptions(true),
                         HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
                         CargarArchivoInteraction.from(rutaArchivo, INPUT_FILE),
                         HacerClickInteraction.on(BTN_ARCHIVO_LISTO).withOptions(30, true),
