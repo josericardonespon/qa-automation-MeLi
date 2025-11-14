@@ -8,6 +8,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static com.salesforce.tesa.userintefaces.salesforce.CasoPage.*;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isPresent;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class CasoTask {
@@ -39,6 +40,7 @@ public class CasoTask {
         public <T extends Actor> void performAs(T actor) {
             actor.attemptsTo(
                     HacerClickInteraction.on(PRINCIPAL_CASE).withOptions(30, true),
+                    WaitUntil.the(TAG_CASE, isPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
                     WaitUntil.the(TAG_CASE, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
             );
         }
