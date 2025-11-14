@@ -11,6 +11,7 @@ import static com.salesforce.tesa.userintefaces.salesforce.AudienciaPage.*;
 import static com.salesforce.tesa.userintefaces.salesforce.DecisionPage.*;
 import static com.salesforce.tesa.userintefaces.salesforce.MultasPage.*;
 import static com.salesforce.tesa.userintefaces.salesforce.PericiaPage.*;
+import static com.salesforce.tesa.userintefaces.salesforce.RecursoPage.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class VerificarEventosCreadosTask implements Task {
@@ -61,6 +62,12 @@ public class VerificarEventosCreadosTask implements Task {
                 actor.attemptsTo(
                         HacerClickInteraction.on(IR_EVENTO_PERICIA).withOptions(30, true),
                         WaitUntil.the(VISTA_PERICIA, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
+                );
+                break;
+            case "recurso":
+                actor.attemptsTo(
+                        HacerClickInteraction.on(IR_EVENTO_RECURSO).withOptions(30, true),
+                        WaitUntil.the(VISTA_RECURSO, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
                 );
                 break;
 
