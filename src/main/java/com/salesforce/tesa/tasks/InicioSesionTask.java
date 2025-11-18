@@ -1,5 +1,6 @@
 package com.salesforce.tesa.tasks;
 
+import com.salesforce.tesa.interactions.EsperarInteraction;
 import com.salesforce.tesa.interactions.HacerClickInteraction;
 import com.salesforce.tesa.interactions.InsertarInteraction;
 import com.salesforce.tesa.interactions.NavegarUrlInteraction;
@@ -28,22 +29,24 @@ public class InicioSesionTask implements Task {
     public <T extends Actor> void performAs(T actor) {
         String username = users.getUsername();
         String password = users.getPassword();
+        String url = users.getUrl();
+        String urlSetup = users.getUrlSetup();
         actor.attemptsTo(
-                Open.url(Constants.URL),
+                Open.url(url),
                 WaitUntil.the(INPUT_USER, isVisible()).forNoMoreThan(Duration.ofSeconds(60)),
                 InsertarInteraction.theValue(username).into(INPUT_USER),
                 InsertarInteraction.theValue(password).into(INPUT_PASSWORD),
                 HacerClickInteraction.on(BTN_LOGIN_SALESFORCE),
-                NavegarUrlInteraction.navegarUrl(URL_SETUP),
-                WaitUntil.the(INPUT_SEARCH, isVisible()).forNoMoreThan(Duration.ofSeconds(15)),
+                NavegarUrlInteraction.navegarUrl(urlSetup),
+                EsperarInteraction.por(2000),
+                WaitUntil.the(INPUT_SEARCH, isPresent()).forNoMoreThan(Duration.ofSeconds(15)),
                 InsertarInteraction.theValue("Abogado Externo").into(INPUT_SEARCH).withOptions(30,true),
                 HacerClickInteraction.on(SEARCH_RESULT).withOptions(60,true),
                 WaitUntil.the(IFRAME_ABOGADO, isPresent()).forNoMoreThan(Duration.ofSeconds(60)),
                 Switch.toFrame(IFRAME_ABOGADO.resolveFor(actor)),
                 HacerClickInteraction.on(BTN_LOGIN),
                 WaitUntil.the(BTN_LOGIN, isNotVisible()).forNoMoreThan(Duration.ofSeconds(15)),
-                Switch.toParentFrame(),
-                WaitUntil.the(WELCOME_ABOGADO, isVisible()).forNoMoreThan(Duration.ofSeconds(60))
+                Switch.toParentFrame()
         );
 
     }

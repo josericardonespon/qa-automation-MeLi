@@ -22,4 +22,22 @@ public class Users {
         return EnvironmentSpecificConfiguration.from(environmentVariables)
                 .getProperty("salesforce.password");
     }
+    public String getUrl() {
+        return EnvironmentSpecificConfiguration
+                .from(environmentVariables)
+                .getProperty("salesforce.url");
+    }
+
+    public String getUrlSetup() {
+        return EnvironmentSpecificConfiguration
+                .from(environmentVariables)
+                .getProperty("salesforce.urlSetup");
+    }
+
+    public String getEnvironment() {
+        return EnvironmentSpecificConfiguration.from(environmentVariables)
+                .getProperty("environment");
+    }
+
+
 }
