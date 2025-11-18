@@ -1,6 +1,7 @@
 package com.salesforce.tesa.tasks;
 
 import com.salesforce.tesa.interactions.HacerClickInteraction;
+import com.salesforce.tesa.utils.Users;
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -35,14 +36,28 @@ public class CasoTask {
     }
 
     public static class IngresarCaso implements Task {
+        private final Users users = new Users();
         @Override
         @Step("{0} ingresa al caso principal '00001008'")
         public <T extends Actor> void performAs(T actor) {
-            actor.attemptsTo(
-                    HacerClickInteraction.on(PRINCIPAL_CASE).withOptions(30, true),
-                    WaitUntil.the(TAG_CASE, isPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
-                    WaitUntil.the(TAG_CASE, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
-            );
+            String ambiente = users.getEnvironment();
+            switch (ambiente.toLowerCase()) {
+                case "qa":
+                    actor.attemptsTo(
+                            HacerClickInteraction.on(PRINCIPAL_CASE_QA).withOptions(30, true),
+                            WaitUntil.the(TAG_CASE_QA, isPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
+                            WaitUntil.the(TAG_CASE_QA, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
+                    );
+                    break;
+                case "uat":
+                    actor.attemptsTo(
+                            HacerClickInteraction.on(PRINCIPAL_CASE_UAT).withOptions(30, true),
+                            WaitUntil.the(TAG_CASE_UAT, isPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
+                            WaitUntil.the(TAG_CASE_UAT, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
+                    );
+                    break;
+            }
+
         }
     }
 

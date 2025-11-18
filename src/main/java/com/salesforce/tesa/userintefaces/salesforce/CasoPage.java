@@ -10,8 +10,14 @@ public class CasoPage {
             .located(By.xpath("//button[@title='Seleccionar una vista de lista: Casos']"));
     public static final Target DEMAND_CASES= Target.the("demand cases")
             .located(By.xpath("//span[text()='Demandas']"));
-    public static final Target PRINCIPAL_CASE= Target.the("principal case")
+    public static final Target PRINCIPAL_CASE_QA= Target.the("principal case")
             .located(By.xpath("//span[text()='00001008']"));
-    public static final Target TAG_CASE= Target.the("tag principal case")
+    public static final Target TAG_CASE_QA= Target.the("tag principal case")
             .located(By.xpath("//span[contains(@class,'test-id__field-value')]//*[contains(text(),'00001008')]"));
+    public static final Target PRINCIPAL_CASE_UAT= Target.the("principal case")
+            .located(By.xpath("//span[text()='00001066']"));
+    public static final Target TAG_CASE_UAT= Target.the("tag principal case")
+            .located(By.xpath("//span[contains(@class,'test-id__field-value')]//*[contains(text(),'00001066')]"));
+
+
 }

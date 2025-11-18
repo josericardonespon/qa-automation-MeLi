@@ -18,8 +18,6 @@ public class InicioSesionPage {
             .located(By.xpath("//iframe[@title='User: Abogado Externo ~ Salesforce - Unlimited Edition']"));
     public static final Target BTN_LOGIN= Target.the("button login")
             .located(By.xpath("(//input[@title='Login'])[1]"));
-    public static final Target WELCOME_ABOGADO = Target.the("welcome abogado")
-            .located(By.xpath("//span[contains(text(), 'Inicio de sesión como')]"));
     public static final Target BARRA_CERRAR_SESION = Target.the("barra cerrar sesion")
             .located(By.xpath("//*[@id=\"oneHeader\"]/div[1]/div"));
 
