@@ -1,6 +1,7 @@
 package com.salesforce.tesa.stepdefinitions;
 
 import com.google.inject.Inject;
+import com.salesforce.tesa.tasks.CambiarRolTask;
 import com.salesforce.tesa.tasks.InicioSesionTask;
 import com.salesforce.tesa.utils.Constants;
 import com.salesforce.tesa.utils.Context;
@@ -19,7 +20,7 @@ public class InicioSesionStep {
 
 
     @Cuando("el usuario inicia sesión como ADMINISTRADOR en MeLi")
-    public void elUsuarioIniciaSesionComo() {
+    public void elUsuarioAdminHaIniciaSesion() {
         OnStage.theActorInTheSpotlight().attemptsTo(InicioSesionTask.conCredencialesValidas());
     }
 
@@ -28,10 +29,11 @@ public class InicioSesionStep {
         Ensure.that(BARRA_CERRAR_SESION).isDisplayed();
     }
 
-    @Dado("que el usuario ADMINISTRADOR ha iniciado sesión como Abogado Externo")
-    public void elUsuarioIniciaSesion() {
-        elUsuarioIniciaSesionComo();
-        accedeALaPaginaPrincipalDeLaORG();
+    @Dado("que el usuario ADMINISTRADOR ha iniciado sesión como {string}")
+    public void elUsuarioAdminHaIniciaSesionComo(String rol) {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                CambiarRolTask.a(rol)
+        );
     }
 
 }

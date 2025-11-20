@@ -2,7 +2,7 @@
 Característica: Creación de eventos en Salesforce
 
   Antecedentes:
-    Dado que el usuario ADMINISTRADOR ha iniciado sesión como Abogado Externo
+    Dado que el usuario ADMINISTRADOR ha iniciado sesión como "Legal Ops Operaciones"
     Y que el usuario desea ingresar a los casos creados en MeLi
     Y selecciona la vista de Demandas
     Y deberá visualizar los casos creados en MeLi e ingresar a un caso

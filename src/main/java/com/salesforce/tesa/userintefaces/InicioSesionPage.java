@@ -13,9 +13,9 @@ public class InicioSesionPage {
     public static final Target INPUT_SEARCH= Target.the("Quick search input")
             .located(By.xpath("//input[@placeholder='Search Setup']"));
     public static final Target SEARCH_RESULT= Target.the("Quick search input")
-            .located(By.xpath("//span[@title='Abogado Externo']"));
-    public static final Target IFRAME_ABOGADO= Target.the("iframe abogado externo")
-            .located(By.xpath("//iframe[@title='User: Abogado Externo ~ Salesforce - Unlimited Edition']"));
+                    .locatedBy("//span[@title='{0}']");
+    public static final Target IFRAME_LOGIN_AS = Target.the("iframe para login-as")
+                    .locatedBy("//iframe[contains(@title, 'User: {0} ~ Salesforce')]");
     public static final Target BTN_LOGIN= Target.the("button login")
             .located(By.xpath("(//input[@title='Login'])[1]"));
     public static final Target BARRA_CERRAR_SESION = Target.the("barra cerrar sesion")

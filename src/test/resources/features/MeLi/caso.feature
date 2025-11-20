@@ -2,7 +2,7 @@
 Característica: Ingresar a caso
 
   Antecedentes:
-    Dado que el usuario ADMINISTRADOR ha iniciado sesión como Abogado Externo
+    Dado que el usuario ADMINISTRADOR ha iniciado sesión como "Legal Ops Operaciones"
 
   @IngresarCasoCreado
   Escenario: Ingresar a un caso creado a traves de MeLi
