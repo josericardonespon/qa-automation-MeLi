@@ -15,4 +15,7 @@ public class Global
             .located(By.xpath("//button[normalize-space(text())='Nuevo Evento']"));
     public static final Target BTN_ARCHIVO_LISTO = Target.the("Botón de archivo listo")
             .located(By.xpath("//button[.//span[normalize-space()='Listo']]"));
+    public static final Target SPINNER = Target.the("Spinner de carga")
+            .located(By.xpath("//span[contains(text(), 'Cargando')]/ancestor::lightning-spinner"));
+
 }

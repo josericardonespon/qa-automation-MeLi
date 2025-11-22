@@ -12,7 +12,7 @@ import static com.salesforce.tesa.userintefaces.salesforce.CasoPage.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isPresent;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
-public class CasoTask {
+public class CrearCasoTask {
 
     public static class AbrirCasos implements Task {
         @Override
