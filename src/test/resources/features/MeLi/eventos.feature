@@ -2,10 +2,8 @@
 Característica: Creación de eventos en Salesforce
 
   Antecedentes:
-    Dado que el usuario ADMINISTRADOR ha iniciado sesión como "Legal Ops Operaciones"
-    Y que el usuario desea ingresar a los casos creados en MeLi
-    Y selecciona la vista de Demandas
-    Y deberá visualizar los casos creados en MeLi e ingresar a un caso
+    Dado que el rol "Legal Ops Operaciones" ha iniciado sesión en MeLi
+    Y que el rol "Legal Ops Operaciones" ha creado un caso correctamente en MeLi
 
   @CrearEventos
   Esquema del escenario: Crear evento según tipo de registro

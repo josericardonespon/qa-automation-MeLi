@@ -6,5 +6,6 @@ public final class Constants {
     }
     public static final String URL = "https://test.salesforce.com/";
     public static final String URL_SETUP = "https://melilegal--qa.sandbox.my.salesforce-setup.com/lightning/setup/SetupOneHome/home";
+    public static final String EMPRESA = "Mercado Pago Asset Management S.A.";
 
 }
