@@ -42,6 +42,7 @@ public class CrearEventosTask implements Task {
                         HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
                         CargarArchivoInteraction.from(rutaArchivo, INPUT_FILE),
                         HacerClickInteraction.on(BTN_ARCHIVO_LISTO).withOptions(30, true),
+                        EsperarInteraction.por(2000),
                         HacerClickInteraction.on(BUTTON_GUARDAR).withOptions(30, true)
                 );
                 break;
@@ -55,6 +56,7 @@ public class CrearEventosTask implements Task {
                         HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, true),
                         CargarArchivoInteraction.from(rutaArchivo, INPUT_FILE),
                         HacerClickInteraction.on(BTN_ARCHIVO_LISTO).withOptions(30, true),
+                        EsperarInteraction.por(2000),
                         HacerClickInteraction.on(BUTTON_GUARDAR).withOptions(30, true)
                 );
                 break;
@@ -67,6 +69,7 @@ public class CrearEventosTask implements Task {
                         HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
                         CargarArchivoInteraction.from(rutaArchivo, INPUT_FILE),
                         HacerClickInteraction.on(BTN_ARCHIVO_LISTO).withOptions(30, true),
+                        EsperarInteraction.por(2000),
                         HacerClickInteraction.on(BUTTON_GUARDAR).withOptions(30, true)
                 );
                 break;
@@ -77,6 +80,7 @@ public class CrearEventosTask implements Task {
                         HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
                         CargarArchivoInteraction.from(rutaArchivo, INPUT_FILE),
                         HacerClickInteraction.on(BTN_ARCHIVO_LISTO).withOptions(30, true),
+                        EsperarInteraction.por(2000),
                         HacerClickInteraction.on(BUTTON_GUARDAR).withOptions(30, true)
                 );
                 break;
@@ -88,6 +92,7 @@ public class CrearEventosTask implements Task {
                         HacerClickInteraction.on(OPTION_FAVORABLE_MELI_PERICIA).withOptions(30, false),
                         HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
                         CargarArchivoInteraction.from(rutaArchivo, INPUT_FILE),
+                        EsperarInteraction.por(2000),
                         HacerClickInteraction.on(BTN_ARCHIVO_LISTO).withOptions(30, true),
                         HacerClickInteraction.on(BUTTON_GUARDAR).withOptions(30, true)
                 );
@@ -100,6 +105,7 @@ public class CrearEventosTask implements Task {
                         HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
                         CargarArchivoInteraction.from(rutaArchivo, INPUT_FILE),
                         HacerClickInteraction.on(BTN_ARCHIVO_LISTO).withOptions(30, true),
+                        EsperarInteraction.por(2000),
                         HacerClickInteraction.on(BUTTON_GUARDAR).withOptions(30, true)
                 );
                 break;

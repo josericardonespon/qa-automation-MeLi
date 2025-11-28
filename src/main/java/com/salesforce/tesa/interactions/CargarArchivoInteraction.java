@@ -57,7 +57,7 @@ public class CargarArchivoInteraction implements Interaction, IsHidden {
                 WaitUntil.the(fileInputTarget, isVisible())
                         .forNoMoreThan(Duration.ofSeconds(30)),
                 Upload.theFile(file).to(fileInputTarget)
-        );
+                );
 
         actor.remember("nombreArchivo", fileNameWithoutExtension);
         LOGGER.info("✅ Archivo '{}' subido correctamente", fileName);
