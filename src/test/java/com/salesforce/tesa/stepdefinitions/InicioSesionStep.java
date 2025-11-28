@@ -36,5 +36,12 @@ public class InicioSesionStep {
         );
     }
 
+    @Dado("que el rol {string} ha iniciado sesión en MeLi")
+    public void rolIniciaSesion(String rol) {
+        elUsuarioAdminHaIniciaSesion();
+        accedeALaPaginaPrincipalDeLaORG();
+        elUsuarioAdminHaIniciaSesionComo(rol);
+    }
+
 }
 

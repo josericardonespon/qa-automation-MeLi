@@ -29,6 +29,9 @@ public class CasoPage {
     public static final Target BTN_NUEVO_CASO = Target.the("Botón Nuevo caso")
             .located(By.xpath("//div[@title='Nuevo caso']"));
 
+    public static final Target IFRAME_NUEVO_CASO = Target.the("Botón Nuevo caso")
+            .located(By.xpath("//iframe[@title='accessibility title']"));
+
     public static final Target COMBO_TIPO_DOCUMENTO = Target.the("Combo Tipo de documento")
             .located(By.xpath("//select[@name='ML_IncomingDocumentType']"));
 
@@ -48,7 +51,7 @@ public class CasoPage {
             .located(By.xpath("//button[@name='country' and @role='combobox']"));
 
     public static final Target COMBO_PAIS_ARGENTINA = Target.the("Combo país con Argentina seleccionada")
-            .located(By.xpath("//button[@name='country' and @role='combobox' and @data-value='Argentina']"));
+            .located(By.xpath("//lightning-base-combobox-item//span[@title='Argentina']"));
 
     public static final Target COMBO_ESTADO = Target.the("Combobox Seleccioná un estado")
             .located(By.xpath("//span[@class='slds-truncate' and normalize-space()='Seleccioná un estado']"));
@@ -65,7 +68,7 @@ public class CasoPage {
     public static final Target INPUT_CIUDAD = Target.the("Campo Ingresá la ciudad")
             .located(By.xpath("//input[@placeholder='Ingresá la ciudad…']"));
 
-    public static final Target OPCION_CIUDA = Target.the("Opción Victoria")
+    public static final Target OPCION_CIUDAD = Target.the("Opción Victoria")
             .located(By.xpath("//span[@class='slds-truncate' and normalize-space()='Victoria' and not(ancestor::button)]"));
 
     public static final Target COMBO_JUSTICIA = Target.the("Combobox de Justicia")
@@ -98,6 +101,10 @@ public class CasoPage {
     public static final Target INPUT_NUMERO_DOCUMENTO_PARTE_CONTRARIA = Target.the("Campo número de documento")
             .located(By.xpath("//input[@placeholder='Escribí el número de documento…']"));
 
+    public static final Target OPCION_DOCUMENTO_PTE_CONT = Target.the("Primer resultado del lookup")
+            .locatedBy("(//ul[@role='listbox']//li[@role='option'])[1]");
+
+
     public static final Target INPUT_NOMBRE_PARTE_CONTRARIA = Target.the("Campo Nombre de Parte Contraria")
             .located(By.xpath("//input[@name='PartesContarias[0]__ML_NamePartyCounter']"));
 
@@ -111,7 +118,7 @@ public class CasoPage {
             .located(By.xpath("//select[@name='ML_HasLawyer']"));
 
     public static final Target OPTION_ABOGADO_SI = Target.the("Opción Sí en Tiene Abogado")
-            .located(By.xpath("//option[@value='ML_HasLawyerPicklist.Sí']"));
+            .located(By.xpath("//select[@name='ML_HasLawyer']//option[@value='ML_HasLawyerPicklist.Sí']"));
 
     public static final Target INPUT_NOMBRE_ABOGADO = Target.the("Campo Nombre del Abogado")
             .located(By.xpath("//input[@name='Lawyer[0]__ML_LawyerName']"));
@@ -136,6 +143,10 @@ public class CasoPage {
 
     public static final Target INPUT_NUMERO_DOCUMENTO_OTRA_PRT_CONT = Target.the("Campo número de documento otra parte contraria")
             .located(By.xpath("(//input[@placeholder='Escribí el número de documento…'])[2]"));
+
+    public static final Target OPCION_DOC_OTRA_PTE_CONT = Target.the("Campo número de documento otra parte contraria")
+            .located(By.xpath("(//ul[@role='listbox']//li[@role='option'])"));
+
 
     public static final Target INPUT_NOMBRE_OTRA_PARTE = Target.the("Campo Nombre de Otra Parte")
             .located(By.xpath("//input[@name='Ml_OtherPartys[0]__ML_NameOtherPartys']"));
@@ -216,6 +227,12 @@ public class CasoPage {
             .located(By.xpath(
                             "//button[@aria-label='Valor reclamado igual al valor de la causa?']" +
                                     "/following::lightning-base-combobox-item[.//span[@title='Sí']][1]"));
+
+    public static final Target COMBO_CASO_RELACIONADO = Target.the("Combo Caso relacionado")
+            .located(By.xpath("//button[@name='duplicateSelector' and @role='combobox']"));
+
+    public static final Target OPCION_CASO_RELACIONADO = Target.the("Opcion caso relacionado")
+            .located(By.xpath("//lightning-base-combobox-item[@role='option']"));
 
     public static final Target LINK_IR_AL_CASO = Target.the("Link Ir al caso")
             .located(By.xpath("//a[normalize-space(text())='Ir al caso']"));

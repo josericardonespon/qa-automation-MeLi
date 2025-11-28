@@ -1,11 +1,12 @@
 #language: es
-Característica: Ingresar a caso
+Característica: Crear Casos a través de MeLi
 
   Antecedentes:
-    Dado que el usuario ADMINISTRADOR ha iniciado sesión como "Legal Ops Operaciones"
+    Dado que el rol "Legal Ops Operaciones" ha iniciado sesión en MeLi
 
-  @IngresarCasoCreado
-  Escenario: Ingresar a un caso creado a traves de MeLi
-    Dado que el usuario desea ingresar a los casos creados en MeLi
+  @CrearCasos
+  Escenario: Crear a un caso nuevo a traves de MeLi
+    Dado que el usuario desea crear un caso en MeLi
     Cuando selecciona la vista de Demandas
-    Entonces deberá visualizar los casos creados en MeLi e ingresar a un caso
+    Y crea un nuevo caso
+    Entonces deberá visualizar e ingresar al caso creado en MeLi correctamente
