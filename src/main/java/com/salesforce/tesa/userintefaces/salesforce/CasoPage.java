@@ -47,6 +47,15 @@ public class CasoPage {
     public static final Target INPUT_FECHA_RECEPCION = Target.the("Campo Fecha de Recepción")
             .located(By.xpath("//input[@name='ML_ReceptionDate']"));
 
+    public static final Target INPUT_FECHA_ANTE_AUTORIDAD = Target.the("Campo Fecha ante la autoridad")
+            .located(By.xpath("//input[@name='ML_StartDateBeforeAuthority']"));
+
+    public static final Target INPUT_FECHA_CONOCIMIENTO_DEMANDADO = Target.the("Campo Fecha de Conocimiento por el demandado")
+            .located(By.xpath("//input[@name='ML_DefendantAwarenessDate']"));
+
+    public static final Target INPUT_FECHA_ENVIO_ESTUDIO = Target.the("Campo Fecha de Envío al estudio")
+            .located(By.xpath("//input[@name='ML_SentToLawFirmDate']"));
+
     public static final Target COMBO_PAIS = Target.the("Combobox de País")
             .located(By.xpath("//button[@name='country' and @role='combobox']"));
 
@@ -136,10 +145,11 @@ public class CasoPage {
             .located(By.xpath("//select[@name='ML_HasOtherParties']//option[@value='ML_HasLawyerPicklist.Sí']"));
 
     public static final Target COMBO_TIPO_DOC_OTRA_PTE_CONT = Target.the("Segunda Combobox Tipo de Documento parte contraria")
-            .located(By.xpath("(//button[@name='documentType' and @role='combobox'])[2]"));
+            .located(By.xpath("(//button[@role='combobox' and @aria-label='Tipo de documento'])[2]"));
 
     public static final Target OPTION_DNI_COMBO_OTRA_PTE_CONT = Target.the("Opción DNI del segundo combo 'Tipo de documento'")
-            .located(By.xpath("((//button[@name='documentType' and @role='combobox'])[2]/following::span[@title='DNI' and normalize-space()='DNI'])[1]"));
+            .located(By.xpath("(//button[@role='combobox' and @aria-label='Tipo de documento'])[2]" +
+                    "    /following::lightning-base-combobox-item[.//span[@title='DNI']][1]"));
 
     public static final Target INPUT_NUMERO_DOCUMENTO_OTRA_PRT_CONT = Target.the("Campo número de documento otra parte contraria")
             .located(By.xpath("(//input[@placeholder='Escribí el número de documento…'])[2]"));
