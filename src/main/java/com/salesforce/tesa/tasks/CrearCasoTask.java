@@ -10,6 +10,7 @@ import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Switch;
+import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.waits.WaitOnQuestion;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
@@ -37,6 +38,7 @@ public class CrearCasoTask {
         @Step("{0} selecciona la vista de Demandas en la lista de Casos")
         public <T extends Actor> void performAs(T actor) {
             actor.attemptsTo(
+                    WaitUntil.the(COMBO_CASES, WebElementStateMatchers.isCurrentlyEnabled()).forNoMoreThan(30).seconds(),
                     HacerClickInteraction.on(COMBO_CASES).withOptions(30, true),
                     HacerClickInteraction.on(DEMAND_CASES).withOptions(30, true)
             );
@@ -48,7 +50,7 @@ public class CrearCasoTask {
         private final String rutaArchivo = CargarArchivoUtil.obtenerRutaArchivo("PRUEBA.txt");
         String numeroExpediente = String.valueOf(System.currentTimeMillis()).substring(8);
         @Override
-        @Step("{0} ingresa al caso principal '00001008'")
+        @Step("{0} Crear caso principal en MeLi")
         public <T extends Actor> void performAs(T actor) {
             String ambiente = users.getEnvironment();
             switch (ambiente.toLowerCase()) {
@@ -63,6 +65,9 @@ public class CrearCasoTask {
                             InsertarInteraction.theValue(numeroExpediente).into(INPUT_NUMERO_EXPEDIENTE).withOptions(30, true),
                             InsertarInteraction.theValue("Cierre Sucursal").into(INPUT_CARATULA).withOptions(30, true),
                             EscribirFechaInteraction.en(INPUT_FECHA_RECEPCION, FechaUtil.obtenerFechaPosterior(3)),
+                            EscribirFechaInteraction.en(INPUT_FECHA_ANTE_AUTORIDAD, FechaUtil.obtenerFechaPosterior(3)),
+                            EscribirFechaInteraction.en(INPUT_FECHA_CONOCIMIENTO_DEMANDADO, FechaUtil.obtenerFechaPosterior(3)),
+                            EscribirFechaInteraction.en(INPUT_FECHA_ENVIO_ESTUDIO, FechaUtil.obtenerFechaPosterior(4)),
                             HacerScrollInteraction.to(COMBO_PAIS),
                             HacerClickInteraction.on(COMBO_PAIS).withOptions(30, false),
                             HacerClickInteraction.on(COMBO_PAIS_ARGENTINA).withOptions(30, false),
@@ -82,8 +87,7 @@ public class CrearCasoTask {
                             HacerClickInteraction.on(OPCION_ROL).withOptions(30, false),
                             HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
                             EsperarInteraction.por(2000),
-                            //WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
-                            WaitUntil.the(COMBO_TIPO_DOCUMENTO_PARTES_CONTRARIAS, isEnabled()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
+                            WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
                             HacerClickInteraction.on(COMBO_TIPO_DOCUMENTO_PARTES_CONTRARIAS).withOptions(30, false),
                             HacerClickInteraction.on(OPTION_TIPO_IDENTIFICACION_DNI).withOptions(30, false),
                             InsertarInteraction.theValue("18798777").into(INPUT_NUMERO_DOCUMENTO_PARTE_CONTRARIA).withOptions(30, true),
@@ -174,11 +178,9 @@ public class CrearCasoTask {
     public static Task abrirCasos() {
         return Tasks.instrumented(AbrirCasos.class);
     }
-
     public static Task seleccionarVistaDemandas() {
         return Tasks.instrumented(SeleccionarVistaDemandas.class);
     }
-
     public static Task crearCasos() {
         return Tasks.instrumented(CrearCasos.class);
     }
