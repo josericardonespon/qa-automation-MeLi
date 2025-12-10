@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Inicio sesion exitoso en la ORG de Salesforce" skipped="3" tests="3" time="0.07" timestamp="2025-12-10 11:39:02"><testcase name="Inicio sesion exitoso en la ORG de Salesforce"><compromised message="Environment 'salesforce.username' property undefined for environment '[]'" type="net.serenitybdd.model.environment.UndefinedEnvironmentVariableException">Environment 'salesforce.username' property undefined for environment '[]'</compromised><system-err>Environment 'salesforce.username' property undefined for environment '[]'
+net.serenitybdd.model.environment.EnvironmentSpecificConfiguration.lambda$getProperty$11(EnvironmentSpecificConfiguration.java:196)
+net.serenitybdd.model.environment.EnvironmentSpecificConfiguration.getProperty(EnvironmentSpecificConfiguration.java:192)
+com.salesforce.tesa.utils.Users.getUsername(Users.java:18)
+com.salesforce.tesa.tasks.InicioSesionTask.performAs(InicioSesionTask.java:30)
+com.salesforce.tesa.stepdefinitions.InicioSesionStep.elUsuarioAdminHaIniciaSesion(InicioSesionStep.java:24)
+✽.el usuario inicia sesión como ADMINISTRADOR en MeLi(classpath:features/authentication/inicio_sesion.feature:6)
+</system-err></testcase></testsuite>

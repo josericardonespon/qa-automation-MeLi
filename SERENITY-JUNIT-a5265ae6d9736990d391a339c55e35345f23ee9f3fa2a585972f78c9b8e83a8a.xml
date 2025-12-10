@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Proceso de Casos E2E" skipped="18" tests="18" time="0.4" timestamp="2025-12-10 11:39:02"><testcase name="Flujo E2E exitoso para caso con rol &lt;rol&gt; y evento &lt;tipoEvento&gt;"><compromised message="Environment 'salesforce.username' property undefined for environment '[]'" type="net.serenitybdd.model.environment.UndefinedEnvironmentVariableException">Environment 'salesforce.username' property undefined for environment '[]'</compromised><system-err>Environment 'salesforce.username' property undefined for environment '[]'
+net.serenitybdd.model.environment.EnvironmentSpecificConfiguration.lambda$getProperty$11(EnvironmentSpecificConfiguration.java:196)
+net.serenitybdd.model.environment.EnvironmentSpecificConfiguration.getProperty(EnvironmentSpecificConfiguration.java:192)
+com.salesforce.tesa.utils.Users.getUsername(Users.java:18)
+com.salesforce.tesa.tasks.InicioSesionTask.performAs(InicioSesionTask.java:30)
+com.salesforce.tesa.stepdefinitions.InicioSesionStep.elUsuarioAdminHaIniciaSesion(InicioSesionStep.java:24)
+com.salesforce.tesa.stepdefinitions.InicioSesionStep.rolIniciaSesion(InicioSesionStep.java:41)
+✽.que el rol "BPO Operaciones" ha iniciado sesión en MeLi(classpath:features/proceso_casos.feature:7)
+</system-err></testcase></testsuite>
