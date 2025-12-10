@@ -141,6 +141,9 @@
                     <excludes>
                         <exclude>**/*WithFailures.java</exclude>
                     </excludes>
+                    <parallel>classes</parallel>
+                    <parallel>methods</parallel>
+                    <useUnlimitedThreads>true</useUnlimitedThreads>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
                 <executions>
