@@ -31,10 +31,10 @@ public class VerificarEventosCreadosTask implements Task {
 
         switch (tipoEvento.toLowerCase()) {
 
-            case "acuerdos":
+            case "acuerdo":
                 actor.attemptsTo(
-                        HacerClickInteraction.on(IR_EVENTO_ACUERDOS).withOptions(30, true),
-                        WaitUntil.the(VISTA_ACUERDOS, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
+                        HacerClickInteraction.on(IR_EVENTO_ACUERDO).withOptions(30, true),
+                        WaitUntil.the(VISTA_ACUERDO, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
                 );
                 break;
 
@@ -52,7 +52,7 @@ public class VerificarEventosCreadosTask implements Task {
                         WaitUntil.the(VISTA_DECISION, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))
                 );
                 break;
-            case "multas":
+            case "multa":
                 actor.attemptsTo(
                         HacerClickInteraction.on(IR_EVENTO_MULTAS).withOptions(30, true),
                         WaitUntil.the(VISTA_MULTAS, isVisible()).forNoMoreThan(java.time.Duration.ofSeconds(30))

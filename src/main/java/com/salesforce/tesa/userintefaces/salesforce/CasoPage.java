@@ -95,6 +95,10 @@ public class CasoPage {
     public static final Target INPUT_BUSCAR_EMPRESA = Target.the("Campo Buscar empresa")
             .located(By.xpath("//input[@placeholder='Buscar empresa…']"));
 
+    public static final Target OPCION_MERCADO_PAGO =
+            Target.the("Opción Mercado Pago")
+                    .located(By.xpath("(//span[@class='slds-truncate' and @title='Mercado Pago Asset Management S.A.'])[1]"));
+
     public static final Target COMBO_ROL_EMPRESA = Target.the("Combo Rol de la empresa")
             .located(By.xpath("//select[@name='ML_MercadoLibreCompany[0]__Role']"));
 
@@ -143,6 +147,9 @@ public class CasoPage {
 
     public static final Target OPTION_OTRAS_PARTES_SI = Target.the("Opción Sí en Tiene Otras Partes")
             .located(By.xpath("//select[@name='ML_HasOtherParties']//option[@value='ML_HasLawyerPicklist.Sí']"));
+
+    public static final Target OPTION_OTRAS_PARTES_NO = Target.the("Opción No en Tiene Otras Partes")
+            .located(By.xpath("//select[@name='ML_HasOtherParties']//option[@value='ML_HasLawyerPicklist.No']"));
 
     public static final Target COMBO_TIPO_DOC_OTRA_PTE_CONT = Target.the("Segunda Combobox Tipo de Documento parte contraria")
             .located(By.xpath("(//button[@role='combobox' and @aria-label='Tipo de documento'])[2]"));

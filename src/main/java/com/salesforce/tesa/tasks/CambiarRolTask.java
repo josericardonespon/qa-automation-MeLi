@@ -11,11 +11,15 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Switch;
+import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import java.time.Duration;
 
 import static com.salesforce.tesa.userintefaces.InicioSesionPage.*;
+import static com.salesforce.tesa.userintefaces.salesforce.CasoPage.COMBO_CASES;
+import static com.salesforce.tesa.userintefaces.salesforce.Global.SPINNER;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isNotPresent;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isPresent;
 
 
@@ -40,6 +44,7 @@ public class CambiarRolTask implements Task {
         actor.attemptsTo(
                 NavegarUrlInteraction.navegarUrl(urlSetup),
                 EsperarInteraction.por(2000),
+                WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
                 HacerClickInteraction.on(INPUT_SEARCH).withOptions(30,true),
                 InsertarInteraction.theValue(rol).into(INPUT_SEARCH),
                 HacerClickInteraction.on(SEARCH_RESULT.of(rol)).withOptions(30,true),

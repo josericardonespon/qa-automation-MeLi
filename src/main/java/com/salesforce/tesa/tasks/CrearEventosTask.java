@@ -34,8 +34,8 @@ public class CrearEventosTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         switch (tipoEvento.toLowerCase()) {
-            case "acuerdos":
-                crearEventoBase(actor, RADIO_ACUERDOS);
+            case "acuerdo":
+                crearEventoBase(actor, RADIO_ACUERDO);
                 actor.attemptsTo(
                         HacerClickInteraction.on(COMBO_RESULT_AGREEMENT).withOptions(30, false),
                         HacerClickInteraction.on(OPTION_PAGA_LEGALES).withOptions(30, false),
@@ -73,8 +73,8 @@ public class CrearEventosTask implements Task {
                         HacerClickInteraction.on(BUTTON_GUARDAR).withOptions(30, true)
                 );
                 break;
-            case "multas":
-                crearEventoBase(actor, RADIO_MULTAS);
+            case "multa":
+                crearEventoBase(actor, RADIO_MULTA);
                 actor.attemptsTo(
                         InsertarInteraction.theValue("1000").into(MONTO_MULTA).withOptions(true),
                         HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),

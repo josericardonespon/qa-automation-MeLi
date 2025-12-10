@@ -38,7 +38,7 @@ public class CrearCasoStep {
         );
     }
 
-    @Dado("que el rol {string} ha creado un caso correctamente en MeLi")
+    @Dado("el rol {string} ha creado un caso correctamente en MeLi")
     public void casoCreadoEnMeli(String rol) {
         queElUsuarioDeseaCrearCasosEnMeli();
         seleccionaLaVistaDeDemandas();
