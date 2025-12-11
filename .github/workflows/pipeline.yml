@@ -9,7 +9,7 @@ on:
         default: '@FlujosCompletosConEventos'
         type: choice
         options:
-            - @FlujosCompletosConEventos
+            - '@FlujosCompletosConEventos'
 
 permissions:
   contents: write
