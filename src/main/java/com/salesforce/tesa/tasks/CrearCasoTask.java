@@ -150,7 +150,7 @@ public class CrearCasoTask {
                     break;
                 case "uat":
                     actor.attemptsTo(
-                            EsperarInteraction.por(2000),
+                            EsperarInteraction.por(4000),
                             HacerClickInteraction.on(BTN_NUEVO_CASO).withOptions(30, true),
                             WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
                             Switch.toFrame(IFRAME_NUEVO_CASO.resolveFor(actor)),
@@ -181,7 +181,7 @@ public class CrearCasoTask {
                             HacerClickInteraction.on(COMBO_ROL_EMPRESA).withOptions(30, true),
                             HacerClickInteraction.on(OPCION_ROL).withOptions(30, false),
                             HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
-                            EsperarInteraction.por(2000),
+                            EsperarInteraction.por(4000),
                             WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
                             HacerClickInteraction.on(COMBO_TIPO_DOCUMENTO_PARTES_CONTRARIAS).withOptions(30, false),
                             HacerClickInteraction.on(OPTION_TIPO_IDENTIFICACION_DNI).withOptions(30, false),
@@ -206,8 +206,8 @@ public class CrearCasoTask {
                             HacerClickInteraction.on(OPTION_OTRAS_PARTES_NO).withOptions(30,false),
                              */
                             HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, true),
-                            EsperarInteraction.por(2000),
-                            //WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
+                            EsperarInteraction.por(4000),
+                            WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
                             HacerClickInteraction.on(COMBO_CASO_RELACIONADO).withOptions(30, false),
                             HacerClickInteraction.on(OPCION_CASO_RELACIONADO).withOptions(30, false),
                             HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, true),
@@ -238,9 +238,10 @@ public class CrearCasoTask {
                             HacerClickInteraction.on(COMBO_VALOR_RECLAMADO).withOptions(30, false),
                             HacerClickInteraction.on(OPTION_VALOR_RECLAMADO_SI).withOptions(30, false),
                             HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, true),
-                            EsperarInteraction.por(2000),
+                            EsperarInteraction.por(4000),
                             //WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
                             CargarArchivoInteraction.from(rutaArchivo, INPUT_FILE),
+                            EsperarInteraction.por(2000),
                             HacerClickInteraction.on(BTN_ARCHIVO_LISTO).withOptions(30, true),
                             EsperarInteraction.por(2000),
                             HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, true)

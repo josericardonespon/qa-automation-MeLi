@@ -50,9 +50,6 @@ public class CargarArchivoInteraction implements Interaction, IsHidden {
                 ? fileName.substring(0, fileName.lastIndexOf('.'))
                 : fileName;
 
-        LOGGER.info("📁 Subiendo archivo: {}", file);
-        LOGGER.info("📎 Nombre sin extensión: {}", fileNameWithoutExtension);
-
         actor.attemptsTo(
                 WaitUntil.the(fileInputTarget, isVisible())
                         .forNoMoreThan(Duration.ofSeconds(30)),
@@ -60,6 +57,5 @@ public class CargarArchivoInteraction implements Interaction, IsHidden {
                 );
 
         actor.remember("nombreArchivo", fileNameWithoutExtension);
-        LOGGER.info("✅ Archivo '{}' subido correctamente", fileName);
     }
 }
