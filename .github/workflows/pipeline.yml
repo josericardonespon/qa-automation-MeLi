@@ -45,10 +45,6 @@ jobs:
           npm i puppeteer
           npx @puppeteer/browsers install chrome@stable
 
-
-      #################################################
-      #   CARGA DE CREDENCIALES SEGÚN AMBIENTE
-      #################################################
       - name: Set environment credentials
         run: |
   
