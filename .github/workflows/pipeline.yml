@@ -1,15 +1,15 @@
 name: CI/CD - Pipeline MeLi
 
 on:
-  pull_request:
-    branches: [ master ]
-
   workflow_dispatch:
     inputs:
       tag:
-        description: "Tag Cucumber a ejecutar"
+        description: 'Tag Cucumber a ejecutar'
         required: true
-        default: "@FlujosCompletosConEventos"
+        default: '@FlujosCompletosConEventos'
+        type: choice
+        options:
+            - @FlujosCompletosConEventos
 
 permissions:
   contents: write
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-  
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
