@@ -72,13 +72,13 @@ public class CasoPage {
             .located(By.xpath("//input[@placeholder='Ingresá el municipio…']"));
 
     public static final Target OPCION_MUNICIPIO = Target.the("Opción San Fernando")
-            .located(By.xpath("//span[@class='slds-truncate' and normalize-space()='San Fernando' and not(ancestor::button)]"));
+            .located(By.xpath("//div[.//lightning-input[.//label[text()='Municipio']]]/following-sibling::div//span[text()='San Fernando']"));
 
     public static final Target INPUT_CIUDAD = Target.the("Campo Ingresá la ciudad")
             .located(By.xpath("//input[@placeholder='Ingresá la ciudad…']"));
 
     public static final Target OPCION_CIUDAD = Target.the("Opción Victoria")
-            .located(By.xpath("//span[@class='slds-truncate' and normalize-space()='Victoria' and not(ancestor::button)]"));
+            .located(By.xpath("//div[.//lightning-input[.//label[text()='Ciudad']]]/following-sibling::div//span[text()='Victoria']"));
 
     public static final Target COMBO_JUSTICIA = Target.the("Combobox de Justicia")
             .located(By.xpath("//button[@name='justice' and @role='combobox']"));
@@ -90,14 +90,14 @@ public class CasoPage {
             .located(By.xpath("//input[@placeholder='Ingresá la autoridad…']"));
 
     public static final Target OPCION_AUTORIDAD_RIO_CUARTO = Target.the("Opción Municipalidad de Rio Cuarto")
-            .located(By.xpath("//span[@class='slds-truncate' and normalize-space()='Municipalidad de Rio Cuarto' and not(ancestor::button)]"));
+            .located(By.xpath("//div[.//lightning-input[.//label[text()='Autoridad/Organismo']]]/following-sibling::div//span[text()='Municipalidad de Rio Cuarto']"));
 
     public static final Target INPUT_BUSCAR_EMPRESA = Target.the("Campo Buscar empresa")
             .located(By.xpath("//input[@placeholder='Buscar empresa…']"));
 
     public static final Target OPCION_MERCADO_PAGO =
             Target.the("Opción Mercado Pago")
-                    .located(By.xpath("(//span[@class='slds-truncate' and @title='Mercado Pago Asset Management S.A.'])[1]"));
+                    .located(By.xpath("(//c-ml_account-lookup-by-country//label[text()='Empresas disponibles']/following-sibling::div//span[@title='Mercado Pago Asset Management S.A.'])[1]"));
 
     public static final Target COMBO_ROL_EMPRESA = Target.the("Combo Rol de la empresa")
             .located(By.xpath("//select[@name='ML_MercadoLibreCompany[0]__Role']"));

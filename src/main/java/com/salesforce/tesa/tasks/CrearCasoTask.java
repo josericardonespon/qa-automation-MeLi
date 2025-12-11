@@ -83,7 +83,6 @@ public class CrearCasoTask {
                             InsertarInteraction.theValue("Municipalidad de Rio Cuarto").into(INPUT_AUTORIDAD).withOptions(30,true),
                             HacerClickInteraction.on(OPCION_AUTORIDAD_RIO_CUARTO).withOptions(30, true),
                             InsertarInteraction.theValue(EMPRESA).into(INPUT_BUSCAR_EMPRESA).withOptions(30,true),
-                            EsperarInteraction.por(2000),
                             HacerClickInteraction.on(COMBO_ROL_EMPRESA).withOptions(30, true),
                             HacerClickInteraction.on(OPCION_ROL).withOptions(30, false),
                             HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
