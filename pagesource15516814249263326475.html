@@ -1,0 +1,1159 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html style="" lang="es-MX"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;script src="/static/111213/js/perf/stub.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript?rel=1765475888000" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript"&gt;window.Sfdc = window.Sfdc || {};<br/>
+Sfdc.xdomain = Sfdc.xdomain || {};<br/>
+Sfdc.xdomain.sfdcXDomainProxy = 'https://melilegal--uat.sandbox.my.salesforce.com/support/console/xdomain/30.0/crossDomainProxy.html';<br/>
+&lt;/script&gt;<br/>
+  &lt;script src="/jslibrary/1752551382258/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/support/console/xdomain/30.0/xdomain.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;<br/>
+//&lt;![CDATA[ <br/>
+(function() {<br/>
+    window.lmsInitialized = false;<br/>
+<br/>
+    // only initialize config data if not already present.  If present someone else is attempting to spoof it.<br/>
+    if(!window.lmsConfig) {<br/>
+    <br/>
+        window.lmsConfig = {<br/>
+            lmsRegistry: {},<br/>
+        };<br/>
+        window.lmsInitialized = true;<br/>
+    } else {<br/>
+        window.console.error('window.lmsConfig has already been defined.');<br/>
+    }})();<br/>
+//]]&gt;&lt;/script&gt;<br/>
+  &lt;script src="/jslibrary/1752551382258/sfdc/AuraAlohaFrameNavigator.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/sforce/one/65.0/api.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/jslibrary/1633048784258/sfdc/InternalDialogs.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/jslibrary/1746634855258/sfdc/IframeThirdPartyContextLogging.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/lightning/lightning.out.js?v=2" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://melilegal--uat--c.sandbox.vf.force.com/lightning/lightning.out.delegate.js?v=1765560517234"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/static/111213/js/picklist4.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/jslibrary/1686615502258/sfdc/VFState.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/jslibrary/1763463877258/sfdc/main.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/jslibrary/jslabels/1765478817000/es_MX.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;link class="user" href="/flow/lightningOut.css" rel="stylesheet" type="text/css"&gt;<br/>
+  &lt;script src="/jslibrary/1647410351258/sfdc/NetworkTracking.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;try{ NetworkTracking.init('/_ui/networks/tracking/NetworkTrackingServlet', 'network', 'null'); }catch(x){}&lt;/script&gt;<br/>
+  &lt;script&gt;(function(UITheme) {<br/>
+    UITheme.getUITheme = function() { <br/>
+        return UserContext.uiTheme;<br/>
+    };<br/>
+}(window.UITheme = window.UITheme || {}));&lt;/script&gt;<br/>
+  &lt;meta http-equiv="origin-trial" content="AkBgNlDiY3u6JLOlyCHNo+uI//ZsQNGdALGkaqj2TaJPsaytJKhRW2ej+qKdkIs3auzeCWPCYX2AE/jVxzJS0AwAAABaeyJvcmlnaW4iOiJodHRwczovL2ZvcmNlLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHBjZCIsImV4cGlyeSI6MTczNTM0Mzk5OSwiaXNTdWJkb21haW4iOnRydWV9"&gt;<br/>
+  &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+try{(function(){var w=self,l,d,i,o,n,h,f=['melilegal--uat.sandbox.lightning.force.com','melilegal--uat.sandbox.my.salesforce.com'],a=document.createElement('a');if(w&&(l=w.location)&&(o=l.ancestorOrigins)&&(d=w.document)){for(i=0,n=o.length;i&lt;n;i++){h=o[i];if(h){a.href=h;if(l.protocol!==a.protocol||(l.host!==a.host&&d.domain!==a.host&&f.indexOf(a.host)&lt;0))throw "";}}}({f:function(){document.documentElement?document.documentElement.style.display="":(!this.a&&(this.a=10),this.a&lt;1E5&&(window.sfdcRetryShowWindow=this)&&setTimeout("sfdcRetryShowWindow.f()",this.a),this.a*=2)}}.f())})();}catch(e){if(top!==self)top.location=location;else throw e;}//]]&gt;&lt;/script&gt;<br/>
+  &lt;meta http-equiv="PRAGMA" content="NO-CACHE"&gt;<br/>
+  &lt;meta http-equiv="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT"&gt;<br/>
+  &lt;script type="text/javascript" data-src="/jslibrary/1765478817000/ui-analytics-reporting/EclairNG.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="/l/%7B%22mode%22%3A%22PROD%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22flowruntime%3AflowLightningOut%22%2C%22fwuid%22%3A%22NDdEUGVLTDZ2b2Z6Uk5fekEtcFVvdzFLcUUxeUY3ZVB6dE9hR0VheDVpb2cxMy4zMzU1NDQzMi41MDMzMTY0OA%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fflowruntime%3AflowLightningOut%22%3A%221398_C6HNHJXNKgbxZFXqBIYWwg%22%7D%2C%22mlr%22%3A1%2C%22pathPrefix%22%3A%22%22%2C%22dns%22%3A%22c%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22551347034%22%7D/resources.js?pv=1765557511000-547562973&amp;rv=1764354944000"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://b.static.lightning.force.com/usa952s.sfdc-8tgtt5/auraFW/javascript/NDdEUGVLTDZ2b2Z6Uk5fekEtcFVvdzFLcUUxeUY3ZVB6dE9hR0VheDVpb2cxMy4zMzU1NDQzMi41MDMzMTY0OA/aura_prod.js" crossorigin="anonymous"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="/l/%7B%22mode%22%3A%22PROD%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22flowruntime%3AflowLightningOut%22%2C%22fwuid%22%3A%22NDdEUGVLTDZ2b2Z6Uk5fekEtcFVvdzFLcUUxeUY3ZVB6dE9hR0VheDVpb2cxMy4zMzU1NDQzMi41MDMzMTY0OA%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fflowruntime%3AflowLightningOut%22%3A%221398_C6HNHJXNKgbxZFXqBIYWwg%22%7D%2C%22mlr%22%3A1%2C%22pathPrefix%22%3A%22%22%2C%22dns%22%3A%22c%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22551347034%22%7D/inline.js?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..kmG9W9JjNSO-Tdc_Vq4yChdpffcelmlLa-OsWvJgIuA"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://b.static.lightning.force.com/usa952s.sfdc-8tgtt5/aurafile/%7B%22mode%22%3A%22PROD%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22flowruntime%3AflowLightningOut%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22551347034%22%2C%22ln%22%3A1%7D/xEKWCIen4Ln69BAk4y-eoQ/apppart1-2.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://b.static.lightning.force.com/usa952s.sfdc-8tgtt5/aurafile/%7B%22mode%22%3A%22PROD%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22flowruntime%3AflowLightningOut%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22551347034%22%2C%22ln%22%3A1%7D/S9tmekgL4S_KMAf2kzY58A/apppart2-2.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="/l/%7B%22mode%22%3A%22PROD%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22flowruntime%3AflowLightningOut%22%2C%22fwuid%22%3A%22NDdEUGVLTDZ2b2Z6Uk5fekEtcFVvdzFLcUUxeUY3ZVB6dE9hR0VheDVpb2cxMy4zMzU1NDQzMi41MDMzMTY0OA%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fflowruntime%3AflowLightningOut%22%3A%221398_C6HNHJXNKgbxZFXqBIYWwg%22%7D%2C%22mlr%22%3A1%2C%22pathPrefix%22%3A%22%22%2C%22dns%22%3A%22c%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22551347034%22%7D/bootstrap.js?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..kmG9W9JjNSO-Tdc_Vq4yChdpffcelmlLa-OsWvJgIuA"&gt;&lt;/script&gt;<br/>
+  &lt;link data-href="/l/%7B%22mode%22%3A%22PROD%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22flowruntime%3AflowLightningOut%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fflowruntime%3AflowLightningOut%22%3A%221398_C6HNHJXNKgbxZFXqBIYWwg%22%7D%2C%22styleContext%22%3A%7B%22c%22%3A%22webkit%22%2C%22x%22%3A%5B%223%22%2C%22SLDS%22%2C%22isDesktop%22%5D%2C%22tokens%22%3A%5B%22markup%3A%2F%2Fforce%3AsldsTokens%22%2C%22markup%3A%2F%2Fforce%3Abase%22%2C%22markup%3A%2F%2Fforce%3AformFactorLarge%22%5D%2C%22tuid%22%3A%22N5J9dDTDDqqpHOk7JlLBgQ%22%2C%22cuid%22%3A-595469834%7D%2C%22pathPrefix%22%3A%22%22%7D/app.css?3=" type="text/css" rel="stylesheet" class="auraCss" href="/l/%7B%22mode%22%3A%22PROD%22%2C%22dfs%22%3A%228%22%2C%22app%22%3A%22flowruntime%3AflowLightningOut%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fflowruntime%3AflowLightningOut%22%3A%221398_C6HNHJXNKgbxZFXqBIYWwg%22%7D%2C%22styleContext%22%3A%7B%22c%22%3A%22webkit%22%2C%22x%22%3A%5B%223%22%2C%22SLDS%22%2C%22isDesktop%22%5D%2C%22tokens%22%3A%5B%22markup%3A%2F%2Fforce%3AsldsTokens%22%2C%22markup%3A%2F%2Fforce%3Abase%22%2C%22markup%3A%2F%2Fforce%3AformFactorLarge%22%5D%2C%22tuid%22%3A%22N5J9dDTDDqqpHOk7JlLBgQ%22%2C%22cuid%22%3A-595469834%7D%2C%22pathPrefix%22%3A%22%22%7D/app.css?3="&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;[lwc-3uma98d0eu4-host] {display: flex;flex-direction: column;background-color: var(--slds-c-flow-color-background, var(--slds-g-color-surface-container-1, var(--lwc-colorBackgroundLight)));border-radius: var(--slds-c-flow-border-radius, var(--slds-c-card-radius-border, var(--slds-s-container-radius-border, 0.25rem)));}.flowruntime_body_message[lwc-3uma98d0eu4] {display: block;}.navigationBar[lwc-3uma98d0eu4] {margin: var(--lwc-spacingNone);padding-top: var(--lwc-spacingSmall);border-top: var(--slds-g-sizing-border-1, 1px) solid var(--slds-g-color-border-1, var(--lwc-colorBorder));width: 100%;}.flow-local-action-container[lwc-3uma98d0eu4] {z-index: calc(var(--lwc-zIndexSpinner,9050) + 1);}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;lightning-spinner[lwc-nf9qf0s2co] {z-index: 98;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;footer[lwc-7g95h202aim] {container-type: inline-size;}@container (inline-size &lt; calc(620px - 2rem)) {flowruntime-progress-indicator[lwc-7g95h202aim] {display: none;}}.navigation-bar__progress-fix[lwc-7g95h202aim] {max-width: 100%;}.navigation-bar__spacer[lwc-7g95h202aim] {margin-bottom: auto;margin-top: auto;flex: 1;}.navigation-bar__right-align[lwc-7g95h202aim] {margin-left: auto;}.flow-action-button[lwc-7g95h202aim] + .flow-action-button[lwc-7g95h202aim] {margin-left: var(--lwc-spacingXxSmall, 0.25rem);}.flow-button__LISTEN[lwc-7g95h202aim] {--slds-c-icon-color-foreground: var(--slds-c-button-brand-color-background, #0176d3);}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;[lwc-4p1kl1q7p5n-host] {flex: 1;}.flowruntimeBody__lwc[lwc-4p1kl1q7p5n] {padding-left: var(--lwc-spacingMedium,1rem);padding-right: var(--lwc-spacingMedium,1rem);}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.flowruntime-section-column[lwc-6aa2906q6hj] {margin-bottom: var(--lwc-spacingSmall);}.flowruntime-column:empty[lwc-6aa2906q6hj] {width: 0;padding-left: 0;padding-right: 0;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.container[lwc-3anllt3fi9m] {transform: unset;z-index: unset;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.slds-card.card-container[lwc-56c56pgoqld] {box-shadow: 0 var(--slds-g-sizing-border-2, 2px) var(--slds-g-sizing-border-2, 2px) 0 var(--slds-g-color-neutral-base-80, rgb(201, 201, 201));padding: var(--lwc-spacingSmall,0.75rem);}.slds-card.card-container:focus[lwc-56c56pgoqld] {box-shadow: var(--_slds-g-shadow-outline-focus, var(--slds-s-button-shadow-focus, var(--lwc-shadowButtonFocus,0 0 3px #0176d3)));}[lwc-56c56pgoqld-host] {word-break: break-word;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.private-dt-sort-icon[lwc-25f9lgh55ct] {display: inline-block;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.flowruntime-inline[lwc-tnmta5dbnt] {display: inline-block;}.flowruntime-input-label[lwc-tnmta5dbnt] {font-size: var(--lwc-fontSizeSmall, 0.75rem);font-weight: var(--lwc-fontWeightRegular, 400);min-height: 1.5rem;padding-top: 0.14rem;}.flowruntime-input-error[lwc-tnmta5dbnt] {color: var(--lwc-colorTextError, #c23934);font-size: var(--lwc-fontSizeSmall, 0.75rem);}flowruntime-help-text-lwc[lwc-tnmta5dbnt] {position: relative;bottom: var(--lwc-spacingXxSmall,0.25rem);}.slds-form-element__label.slds-rich-text-editor__output[lwc-tnmta5dbnt] {display: inline;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.flowruntime-inline[lwc-1o2vf6350ba] {display: inline-block;padding-top: var(--lwc-spacingXxSmall,0.25rem);}.flowruntime-input-label[lwc-1o2vf6350ba] {font-size: var(--lwc-fontSizeSmall, 0.75rem);font-weight: var(--lwc-fontWeightRegular, 400);vertical-align: text-top;min-height: 1.5rem;padding-top: 0.14rem;}.flowruntime-input-error[lwc-1o2vf6350ba] {color: var(--lwc-colorTextError, #c23934);font-size: var(--lwc-fontSizeSmall, 0.75rem);}.flowruntime-inline.slds-rich-text-editor__output[lwc-1o2vf6350ba] {display: inline;}.flowruntime-inline[lwc-1o2vf6350ba] flowruntime-help-text-lwc[lwc-1o2vf6350ba] {bottom: var(--lwc-spacingXxxSmall,0.125rem);}.flowruntime-inline-container[lwc-1o2vf6350ba] {display: grid;grid-template-columns: var(--lwc-spacingLarge,1.5rem) 1fr;align-items: center;}.flowruntime-input-error__inline[lwc-1o2vf6350ba] {grid-column-start: 1;grid-column-end: 3;}flowruntime-help-text-lwc[lwc-1o2vf6350ba] {position: relative;bottom: var(--lwc-spacingXxSmall,0.25rem);}.slds-form-element__label.slds-rich-text-editor__output[lwc-1o2vf6350ba] {display: inline;cursor: default;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;[lwc-66unc5l95ad-host] {display: block;}[dir="rtl"] input[type='tel'][lwc-66unc5l95ad] {direction: ltr;text-align: right;unicode-bidi: embed;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;[lwc-66unc5l95ad-host].gen-ai-enabled {padding: 0;margin-bottom: 0;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;[dir="rtl"] input[type='tel'][lwc-enmikoh2qu] {direction: ltr;text-align: right;unicode-bidi: embed;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.slds-form-element__help[lwc-6snrgmc8h8c] {color: #c23934;}.lookup[lwc-6snrgmc8h8c] {position: relative;}.lookup-dropdown[lwc-6snrgmc8h8c] {position: absolute;top: calc(100% - 0.25rem);left: 0;right: 0;z-index: 7000;background: white;border: 1px solid #dddbda;border-radius: 0.25rem;max-height: 16rem;overflow-y: auto;box-shadow: 0 2px 6px rgba(0,0,0,.1);}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;[lwc-24on3e8rogg-host] {display: block;}[lwc-24on3e8rogg-host].slds-has-error {--slds-c-input-color-border: var(--slds-g-color-error-base-40, #ea001e);--slds-c-input-shadow: var(--slds-g-color-error-base-40, #ea001e) 0 0 0 1px<br/>
+ inset;--slds-c-input-color-background: var(<br/>
+ --slds-c-input-color-background,<br/>
+ var(<br/>
+ --sds-c-input-color-background,<br/>
+ var(--slds-g-color-neutral-base-100, #fff)<br/>
+ )<br/>
+ );--slds-c-input-text-color: var(<br/>
+ --slds-c-input-text-color,<br/>
+ var(<br/>
+ --sds-c-input-text-color,<br/>
+ var(--slds-g-color-neutral-base-10, #747474)<br/>
+ )<br/>
+ );}.slds-assistive-text[lwc-24on3e8rogg] {position: absolute !important;margin: -1px !important;border: 0 !important;padding: 0 !important;width: 1px !important;height: 1px !important;overflow: hidden !important;clip: rect(0 0 0 0) !important;text-transform: none !important;white-space: nowrap !important;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;[lwc-24on3e8rogg-host].gen-ai-enabled {padding: 0;margin-bottom: 0;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;[lwc-24on3e8rogg-host]:not([invalid]) .slds-form-element__help[lwc-24on3e8rogg] {margin-top: 0px !important;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.slds-inline-logo[lwc-4kb6kaqheak] {height: 1rem;margin-top: 1rem;margin-bottom: 1rem;}input[aria-readonly='true'][lwc-4kb6kaqheak] {caret-color: transparent;}button:disabled[lwc-4kb6kaqheak],[type='button']:disabled[lwc-4kb6kaqheak] {cursor: not-allowed;}.fix-slds-input_faux[lwc-4kb6kaqheak] {line-height: max(1.875rem, calc(1.2em - 2px));}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.ml-overlay[lwc-166regham99] {position: fixed;inset: 0;background: rgba(255, 255, 255, 0.7);z-index: 9999;display: flex;align-items: center;justify-content: center;}.ml-spinner-container[lwc-166regham99] {text-align: center;background: #fff;padding: 1rem 1.5rem;border-radius: 0.25rem;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.private-dt-sort-icon[lwc-3220386utb1] {display: inline-block;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.private-dt-sort-icon[lwc-7b6j2skrjne] {display: inline-block;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.private-dt-sort-icon[lwc-6qul4k2dv7m] {display: inline-block;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.private-dt-sort-icon[lwc-45bd2ao4vb7] {display: inline-block;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;[dir="rtl"] .slds-dropdown_left[lwc-71geokdeko1] {left: 0;right: auto;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;div[data-start][lwc-654o76jjrnk],div[data-end][lwc-654o76jjrnk] {position: fixed;top: 1rem;left: 1rem;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.private-dt-sort-icon[lwc-4i9ieqqhd25] {display: inline-block;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.private-dt-sort-icon[lwc-d8atf0ck0l] {display: inline-block;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.private-dt-sort-icon[lwc-1e39mgvor8u] {display: inline-block;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-rendered-by-lwc=""&gt;.private-dt-sort-icon[lwc-qipn4g7k23] {display: inline-block;}&lt;/style&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body class="slds-scope"&gt;<br/>
+  &lt;span id="j_id0:j_id3"&gt;&lt;/span&gt;<br/>
+  &lt;title&gt;Nuevo caso&lt;/title&gt;<br/>
+  &lt;div id="flowContainer" class="slds-scope" data-ltngout-rendered-by="7:0"&gt;<br/>
+   &lt;article role="main" class="slds-is-relative flowruntimeRuntime" data-aura-rendered-by="9:0" data-aura-class="flowruntimeRuntime"&gt;<br/>
+    &lt;div class="DESKTOP uiPanelManager2 flowruntimeModalManager flowruntimeFlowRuntime" data-aura-rendered-by="24:0" data-aura-class="uiPanelManager2 flowruntimeModalManager flowruntimeFlowRuntime"&gt;&lt;/div&gt;&lt;flowruntime-flow data-aura-rendered-by="26:0" lwc-3uma98d0eu4-host="" class="flowruntimeFlowRuntime" data-aura-class="flowruntimeFlowRuntime" style=""&gt;<br/>
+     &lt;flowruntime-progress-indicator lwc-3uma98d0eu4="" class="slds-p-horizontal_medium"&gt;&lt;/flowruntime-progress-indicator&gt;<br/>
+     &lt;flowruntime-lwc-body lwc-3uma98d0eu4="" lwc-4p1kl1q7p5n-host=""&gt;<br/>
+      &lt;div lwc-4p1kl1q7p5n="" class="flowruntimeBody flowruntimeBody__lwc slds-card__body slds-p-horizontal_small"&gt;<br/>
+       &lt;flowruntime-list-container lwc-4p1kl1q7p5n=""&gt;<br/>
+        &lt;div&gt;<br/>
+         &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+          &lt;div lwc-6aa2906q6hj="" class="slds-grid slds-wrap slds-gutters_direct"&gt;<br/>
+           &lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+            &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+            &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+             &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+              &lt;flowruntime-display-text-lwc lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+               &lt;lightning-formatted-rich-text class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                &lt;!----&gt;<br/>
+                &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;p style="text-align: center;" lwc-4nfn2rc40ch=""&gt;&lt;strong style="font-size: 18px; background-color: rgb(255, 255, 255);" lwc-4nfn2rc40ch=""&gt;Nuevo caso&lt;/strong&gt;&lt;/p&gt;&lt;/span&gt;&lt;!----&gt;<br/>
+               &lt;/lightning-formatted-rich-text&gt;<br/>
+              &lt;/flowruntime-display-text-lwc&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/flowruntime-lwc-field&gt;<br/>
+           &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+            &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+            &lt;flowruntime-list-container&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+               &lt;div lwc-6aa2906q6hj="" class="section slds-grid slds-gutters_direct slds-wrap"&gt;<br/>
+                &lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-section-column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"&gt;<br/>
+                 &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                 &lt;flowruntime-list-container&gt;<br/>
+                  &lt;div&gt;<br/>
+                   &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+                    &lt;div lwc-6aa2906q6hj="" class="slds-grid slds-wrap slds-gutters_direct"&gt;&lt;/div&gt;<br/>
+                   &lt;/flowruntime-base-section&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/flowruntime-list-container&gt;<br/>
+                &lt;/flowruntime-screen-field&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/flowruntime-base-section&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/flowruntime-list-container&gt;<br/>
+           &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+            &lt;div data-render-key="30"&gt;&lt;/div&gt;<br/>
+            &lt;flowruntime-list-container&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+               &lt;div lwc-6aa2906q6hj="" class="section slds-grid slds-gutters_direct slds-wrap"&gt;<br/>
+                &lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-section-column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"&gt;<br/>
+                 &lt;div data-render-key="30"&gt;&lt;/div&gt;<br/>
+                 &lt;flowruntime-list-container&gt;<br/>
+                  &lt;div&gt;<br/>
+                   &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+                    &lt;div lwc-6aa2906q6hj="" class="slds-grid slds-wrap slds-gutters_direct"&gt;<br/>
+                     &lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-display-text-lwc lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;lightning-formatted-rich-text class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                          &lt;!----&gt;<br/>
+                          &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;strong style="font-size: 16px;" lwc-4nfn2rc40ch=""&gt;Tipo de documento de entrada&lt;/strong&gt;&lt;/p&gt;&lt;/span&gt;&lt;!----&gt;<br/>
+                         &lt;/lightning-formatted-rich-text&gt;<br/>
+                        &lt;/flowruntime-display-text-lwc&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_6-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="2"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-picklist-input-lwc lwc-3anllt3fi9m="" aria-describedby="" lwc-tnmta5dbnt-host=""&gt;<br/>
+                         &lt;div lwc-tnmta5dbnt="" class="flowruntime-input slds-form-element"&gt;<br/>
+                          &lt;div lwc-tnmta5dbnt="" class="flowruntime-input-label"&gt;<br/>
+                           &lt;abbr class="slds-required" lwc-tnmta5dbnt="" title="obligatorio"&gt;*&lt;/abbr&gt;&lt;lightning-formatted-rich-text lwc-tnmta5dbnt="" class="slds-form-element__label slds-rich-text-editor__output" id="input-label-104" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                            &lt;!----&gt;<br/>
+                            &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;Tipo de documento de entrada&lt;/span&gt;&lt;!----&gt;<br/>
+                           &lt;/lightning-formatted-rich-text&gt;<br/>
+                          &lt;/div&gt;&lt;lightning-select lwc-tnmta5dbnt="" variant="label-hidden" class="slds-form-element" lwc-184g1ot50fv-host=""&gt;<br/>
+                           &lt;label lwc-184g1ot50fv="" class="slds-form-element__label slds-assistive-text" for="select-106" part="select-label"&gt;&lt;abbr class="slds-required" part="required" lwc-184g1ot50fv="" title="obligatorio"&gt;*&lt;/abbr&gt;Tipo de documento de entrada&lt;/label&gt;<br/>
+                           &lt;div lwc-184g1ot50fv="" class="slds-form-element__control"&gt;<br/>
+                            &lt;div lwc-184g1ot50fv="" class="slds-select_container"&gt;<br/>
+                             &lt;select lwc-184g1ot50fv="" class="slds-select" id="select-106" name="ML_IncomingDocumentType" required part="select" aria-labelledby="input-label-104"&gt;&lt;option lwc-184g1ot50fv="" value="FlowImplicit__DefaultTextChoiceName"&gt;--Ninguno--&lt;/option&gt;&lt;option lwc-184g1ot50fv="" value="ML_IncomingDocumentTypePicklist.Demanda"&gt;Demanda&lt;/option&gt;&lt;/select&gt;<br/>
+                            &lt;/div&gt;<br/>
+                           &lt;/div&gt;<br/>
+                           &lt;div lwc-184g1ot50fv="" role="status"&gt;&lt;/div&gt;<br/>
+                          &lt;/lightning-select&gt;<br/>
+                         &lt;/div&gt;<br/>
+                        &lt;/flowruntime-picklist-input-lwc&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-display-text-lwc lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;lightning-formatted-rich-text class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                          &lt;!----&gt;<br/>
+                          &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;/span&gt;&lt;!----&gt;<br/>
+                         &lt;/lightning-formatted-rich-text&gt;<br/>
+                        &lt;/flowruntime-display-text-lwc&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-display-text-lwc lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;lightning-formatted-rich-text class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                          &lt;!----&gt;<br/>
+                          &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;strong style="font-size: 16px;" lwc-4nfn2rc40ch=""&gt;1. Datos generales del caso&lt;/strong&gt;&lt;/p&gt;&lt;/span&gt;&lt;!----&gt;<br/>
+                         &lt;/lightning-formatted-rich-text&gt;<br/>
+                        &lt;/flowruntime-display-text-lwc&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_6-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="6"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-flow-screen-input lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;flowruntime-input-wrapper2 lwc-1o2vf6350ba-host=""&gt;<br/>
+                          &lt;div lwc-1o2vf6350ba="" class="flowruntime-input slds-form-element"&gt;<br/>
+                           &lt;div lwc-1o2vf6350ba="" class="flowruntime-input-label"&gt;<br/>
+                            &lt;lightning-formatted-rich-text lwc-1o2vf6350ba="" class="slds-form-element__label slds-rich-text-editor__output" id="input-label-112" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;abbr class="slds-required" title="obligatorio" style="border: none" lwc-4nfn2rc40ch=""&gt;*&lt;/abbr&gt;Número de expediente&lt;/span&gt;&lt;!----&gt;<br/>
+                            &lt;/lightning-formatted-rich-text&gt;<br/>
+                           &lt;/div&gt;&lt;lightning-input lwc-1o2vf6350ba="" variant="label-hidden" class="slds-form-element" lwc-66unc5l95ad-host=""&gt;<br/>
+                            &lt;lightning-primitive-input-simple lwc-66unc5l95ad="" exportparts="input-text, input-container, input, required, label" lwc-enmikoh2qu-host="" variant="label-hidden"&gt;<br/>
+                             &lt;div lwc-enmikoh2qu="" part="input-text" populated=""&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" class="slds-form-element__control slds-grow" part="input-container" type="text"&gt;<br/>
+                              &lt;input class="slds-input" part="input" lwc-enmikoh2qu="" id="input-115" maxlength="255" name="ML_LegalNumber" required step="any" type="text" aria-describedby="help-message-115" aria-labelledby="input-label-112" aria-invalid="false"&gt;<br/>
+                              &lt;/div&gt;<br/>
+                             &lt;/div&gt;<br/>
+                             &lt;div lwc-enmikoh2qu="" class="slds-form-element__help slds-m-left_none" id="help-message-115" data-name="ML_LegalNumber" data-help-message="" part="help-text" aria-live="polite"&gt;&lt;/div&gt;<br/>
+                            &lt;/lightning-primitive-input-simple&gt;<br/>
+                           &lt;/lightning-input&gt;<br/>
+                          &lt;/div&gt;<br/>
+                         &lt;/flowruntime-input-wrapper2&gt;<br/>
+                        &lt;/flowruntime-flow-screen-input&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_6-of-12 slds-align-top"&gt;&lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_6-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="16"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-flow-screen-input lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;flowruntime-input-wrapper2 lwc-1o2vf6350ba-host=""&gt;<br/>
+                          &lt;div lwc-1o2vf6350ba="" class="flowruntime-input slds-form-element"&gt;<br/>
+                           &lt;div lwc-1o2vf6350ba="" class="flowruntime-input-label"&gt;<br/>
+                            &lt;lightning-formatted-rich-text lwc-1o2vf6350ba="" class="slds-form-element__label slds-rich-text-editor__output" id="input-label-117" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;abbr class="slds-required" title="obligatorio" style="border: none" lwc-4nfn2rc40ch=""&gt;*&lt;/abbr&gt;Carátula&lt;/span&gt;&lt;!----&gt;<br/>
+                            &lt;/lightning-formatted-rich-text&gt;<br/>
+                           &lt;/div&gt;&lt;lightning-input lwc-1o2vf6350ba="" variant="label-hidden" class="slds-form-element" lwc-66unc5l95ad-host=""&gt;<br/>
+                            &lt;lightning-primitive-input-simple lwc-66unc5l95ad="" exportparts="input-text, input-container, input, required, label" lwc-enmikoh2qu-host="" variant="label-hidden"&gt;<br/>
+                             &lt;div lwc-enmikoh2qu="" part="input-text" populated=""&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" class="slds-form-element__control slds-grow" part="input-container" type="text"&gt;<br/>
+                              &lt;input class="slds-input" part="input" lwc-enmikoh2qu="" id="input-120" maxlength="255" name="ML_CaseTitleBR" required step="any" type="text" aria-describedby="help-message-120" aria-labelledby="input-label-117" aria-invalid="false"&gt;<br/>
+                              &lt;/div&gt;<br/>
+                             &lt;/div&gt;<br/>
+                             &lt;div lwc-enmikoh2qu="" class="slds-form-element__help slds-m-left_none" id="help-message-120" data-name="ML_CaseTitleBR" data-help-message="" part="help-text" aria-live="polite"&gt;&lt;/div&gt;<br/>
+                            &lt;/lightning-primitive-input-simple&gt;<br/>
+                           &lt;/lightning-input&gt;<br/>
+                          &lt;/div&gt;<br/>
+                         &lt;/flowruntime-input-wrapper2&gt;<br/>
+                        &lt;/flowruntime-flow-screen-input&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_6-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="2"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-flow-screen-input lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;flowruntime-input-wrapper2 lwc-1o2vf6350ba-host=""&gt;<br/>
+                          &lt;div lwc-1o2vf6350ba="" class="flowruntime-input slds-form-element"&gt;<br/>
+                           &lt;div lwc-1o2vf6350ba="" class="flowruntime-input-label"&gt;<br/>
+                            &lt;lightning-formatted-rich-text lwc-1o2vf6350ba="" class="slds-form-element__label slds-rich-text-editor__output" id="input-label-122" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;abbr class="slds-required" title="obligatorio" style="border: none" lwc-4nfn2rc40ch=""&gt;*&lt;/abbr&gt;Fecha de recepción&lt;/span&gt;&lt;!----&gt;<br/>
+                            &lt;/lightning-formatted-rich-text&gt;<br/>
+                           &lt;/div&gt;&lt;lightning-input lwc-1o2vf6350ba="" variant="label-hidden" class="slds-form-element" lwc-66unc5l95ad-host=""&gt;<br/>
+                            &lt;lightning-datepicker lwc-66unc5l95ad="" exportparts="label: label-datepicker, button-icon: button-icon-datepicker" variant="label-hidden" lwc-2fb3f2nu4or-host="" data-position-id="lgcp-1000000"&gt;<br/>
+                             &lt;div lwc-2fb3f2nu4or="" class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_1-of-1" role="group" part="input-text"&gt;<br/>
+                              &lt;div lwc-2fb3f2nu4or="" class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right" part="input-container" data-position-id="lgcp-1000001"&gt;<br/>
+                              &lt;input lwc-2fb3f2nu4or="" class="slds-input" type="text" id="input-125" part="input" name="ML_ReceptionDate" required autocomplete="off" aria-describedby="error-message-125 fmt-text-125" aria-labelledby="input-label-122"&gt;&lt;lightning-button-icon lwc-2fb3f2nu4or="" class="slds-input__icon slds-input__icon_right" exportparts="button-icon" variant="bare" lwc-485vfn4rmof-host=""&gt;<br/>
+                              &lt;button lwc-485vfn4rmof="" class="slds-button slds-button_icon slds-button_icon-bare" title="Seleccionar una fecha para Fecha de recepción" type="button" part="button button-icon"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-485vfn4rmof="" exportparts="icon" variant="bare" lwc-7b6j2skrjne-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 52 52" part="icon" lwc-7b6j2skrjne="" data-key="event" class="slds-button__icon"&gt;<br/>
+                              &lt;g lwc-7b6j2skrjne=""&gt;<br/>
+                              &lt;path d="M46.5 20h-41c-.8 0-1.5.7-1.5 1.5V46a4 4 0 004 4h36a4 4 0 004-4V21.5c0-.8-.7-1.5-1.5-1.5zM19 42c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm5-25h-5V5a3 3 0 00-3-3 3 3 0 00-3 3v2H19V5a3 3 0 00-3-3 3 3 0 00-3 3v2H8a4 4 0 00-4 4v2.5c0 .8.7 1.5 1.5 1.5h41c.8 0 1.5-.7 1.5-1.5V11a4 4 0 00-4-4z" lwc-7b6j2skrjne=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;span class="slds-assistive-text" lwc-485vfn4rmof=""&gt;Seleccionar una fecha para Fecha de recepción&lt;/span&gt;&lt;/button&gt;<br/>
+                              &lt;/lightning-button-icon&gt;<br/>
+                              &lt;/div&gt;<br/>
+                             &lt;/div&gt;<br/>
+                             &lt;div data-date-format="" lwc-2fb3f2nu4or="" id="fmt-text-125" data-name="ML_ReceptionDate" class="slds-form-element__help slds-assistive-text"&gt;<br/>
+                              Formato: 31 dic 2024<br/>
+                             &lt;/div&gt;<br/>
+                             &lt;div lwc-2fb3f2nu4or="" class="slds-form-element__help" id="error-message-125" data-name="ML_ReceptionDate" data-error-message="" aria-live="polite"&gt;&lt;/div&gt;<br/>
+                            &lt;/lightning-datepicker&gt;<br/>
+                           &lt;/lightning-input&gt;<br/>
+                          &lt;/div&gt;<br/>
+                         &lt;/flowruntime-input-wrapper2&gt;<br/>
+                        &lt;/flowruntime-flow-screen-input&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_6-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="2"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-flow-screen-input lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;flowruntime-input-wrapper2 lwc-1o2vf6350ba-host=""&gt;<br/>
+                          &lt;div lwc-1o2vf6350ba="" class="flowruntime-input slds-form-element"&gt;<br/>
+                           &lt;div lwc-1o2vf6350ba="" class="flowruntime-input-label"&gt;<br/>
+                            &lt;lightning-formatted-rich-text lwc-1o2vf6350ba="" class="slds-form-element__label slds-rich-text-editor__output" id="input-label-129" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;Fecha de inicio ante la autoridad&lt;/span&gt;&lt;!----&gt;<br/>
+                            &lt;/lightning-formatted-rich-text&gt;<br/>
+                           &lt;/div&gt;&lt;lightning-input lwc-1o2vf6350ba="" variant="label-hidden" class="slds-form-element" lwc-66unc5l95ad-host=""&gt;<br/>
+                            &lt;lightning-datepicker lwc-66unc5l95ad="" exportparts="label: label-datepicker, button-icon: button-icon-datepicker" variant="label-hidden" lwc-2fb3f2nu4or-host="" data-position-id="lgcp-1000003"&gt;<br/>
+                             &lt;div lwc-2fb3f2nu4or="" class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_1-of-1" role="group" part="input-text"&gt;<br/>
+                              &lt;div lwc-2fb3f2nu4or="" class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right" part="input-container" data-position-id="lgcp-1000004"&gt;<br/>
+                              &lt;input lwc-2fb3f2nu4or="" class="slds-input" type="text" id="input-132" part="input" name="ML_StartDateBeforeAuthority" autocomplete="off" aria-describedby="error-message-132 fmt-text-132" aria-labelledby="input-label-129"&gt;&lt;lightning-button-icon lwc-2fb3f2nu4or="" class="slds-input__icon slds-input__icon_right" exportparts="button-icon" variant="bare" lwc-485vfn4rmof-host=""&gt;<br/>
+                              &lt;button lwc-485vfn4rmof="" class="slds-button slds-button_icon slds-button_icon-bare" title="Seleccionar una fecha para Fecha de inicio ante la autoridad" type="button" part="button button-icon"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-485vfn4rmof="" exportparts="icon" variant="bare" lwc-7b6j2skrjne-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 52 52" part="icon" lwc-7b6j2skrjne="" data-key="event" class="slds-button__icon"&gt;<br/>
+                              &lt;g lwc-7b6j2skrjne=""&gt;<br/>
+                              &lt;path d="M46.5 20h-41c-.8 0-1.5.7-1.5 1.5V46a4 4 0 004 4h36a4 4 0 004-4V21.5c0-.8-.7-1.5-1.5-1.5zM19 42c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm5-25h-5V5a3 3 0 00-3-3 3 3 0 00-3 3v2H19V5a3 3 0 00-3-3 3 3 0 00-3 3v2H8a4 4 0 00-4 4v2.5c0 .8.7 1.5 1.5 1.5h41c.8 0 1.5-.7 1.5-1.5V11a4 4 0 00-4-4z" lwc-7b6j2skrjne=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;span class="slds-assistive-text" lwc-485vfn4rmof=""&gt;Seleccionar una fecha para Fecha de inicio ante la autoridad&lt;/span&gt;&lt;/button&gt;<br/>
+                              &lt;/lightning-button-icon&gt;<br/>
+                              &lt;/div&gt;<br/>
+                             &lt;/div&gt;<br/>
+                             &lt;div data-date-format="" lwc-2fb3f2nu4or="" id="fmt-text-132" data-name="ML_StartDateBeforeAuthority" class="slds-form-element__help slds-assistive-text"&gt;<br/>
+                              Formato: 31 dic 2024<br/>
+                             &lt;/div&gt;<br/>
+                             &lt;div lwc-2fb3f2nu4or="" class="slds-form-element__help" id="error-message-132" data-name="ML_StartDateBeforeAuthority" data-error-message="" aria-live="polite"&gt;&lt;/div&gt;<br/>
+                            &lt;/lightning-datepicker&gt;<br/>
+                           &lt;/lightning-input&gt;<br/>
+                          &lt;/div&gt;<br/>
+                         &lt;/flowruntime-input-wrapper2&gt;<br/>
+                        &lt;/flowruntime-flow-screen-input&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_6-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="2"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-flow-screen-input lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;flowruntime-input-wrapper2 lwc-1o2vf6350ba-host=""&gt;<br/>
+                          &lt;div lwc-1o2vf6350ba="" class="flowruntime-input slds-form-element"&gt;<br/>
+                           &lt;div lwc-1o2vf6350ba="" class="flowruntime-input-label"&gt;<br/>
+                            &lt;lightning-formatted-rich-text lwc-1o2vf6350ba="" class="slds-form-element__label slds-rich-text-editor__output" id="input-label-136" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;Fecha de conocimiento del demandado&lt;/span&gt;&lt;!----&gt;<br/>
+                            &lt;/lightning-formatted-rich-text&gt;<br/>
+                           &lt;/div&gt;&lt;lightning-input lwc-1o2vf6350ba="" variant="label-hidden" class="slds-form-element" lwc-66unc5l95ad-host=""&gt;<br/>
+                            &lt;lightning-datepicker lwc-66unc5l95ad="" exportparts="label: label-datepicker, button-icon: button-icon-datepicker" variant="label-hidden" lwc-2fb3f2nu4or-host="" data-position-id="lgcp-1000006"&gt;<br/>
+                             &lt;div lwc-2fb3f2nu4or="" class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_1-of-1" role="group" part="input-text"&gt;<br/>
+                              &lt;div lwc-2fb3f2nu4or="" class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right" part="input-container" data-position-id="lgcp-1000007"&gt;<br/>
+                              &lt;input lwc-2fb3f2nu4or="" class="slds-input" type="text" id="input-139" part="input" name="ML_DefendantAwarenessDate" autocomplete="off" aria-describedby="error-message-139 fmt-text-139" aria-labelledby="input-label-136"&gt;&lt;lightning-button-icon lwc-2fb3f2nu4or="" class="slds-input__icon slds-input__icon_right" exportparts="button-icon" variant="bare" lwc-485vfn4rmof-host=""&gt;<br/>
+                              &lt;button lwc-485vfn4rmof="" class="slds-button slds-button_icon slds-button_icon-bare" title="Seleccionar una fecha para Fecha de conocimiento del demandado" type="button" part="button button-icon"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-485vfn4rmof="" exportparts="icon" variant="bare" lwc-7b6j2skrjne-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 52 52" part="icon" lwc-7b6j2skrjne="" data-key="event" class="slds-button__icon"&gt;<br/>
+                              &lt;g lwc-7b6j2skrjne=""&gt;<br/>
+                              &lt;path d="M46.5 20h-41c-.8 0-1.5.7-1.5 1.5V46a4 4 0 004 4h36a4 4 0 004-4V21.5c0-.8-.7-1.5-1.5-1.5zM19 42c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm5-25h-5V5a3 3 0 00-3-3 3 3 0 00-3 3v2H19V5a3 3 0 00-3-3 3 3 0 00-3 3v2H8a4 4 0 00-4 4v2.5c0 .8.7 1.5 1.5 1.5h41c.8 0 1.5-.7 1.5-1.5V11a4 4 0 00-4-4z" lwc-7b6j2skrjne=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;span class="slds-assistive-text" lwc-485vfn4rmof=""&gt;Seleccionar una fecha para Fecha de conocimiento del demandado&lt;/span&gt;&lt;/button&gt;<br/>
+                              &lt;/lightning-button-icon&gt;<br/>
+                              &lt;/div&gt;<br/>
+                             &lt;/div&gt;<br/>
+                             &lt;div data-date-format="" lwc-2fb3f2nu4or="" id="fmt-text-139" data-name="ML_DefendantAwarenessDate" class="slds-form-element__help slds-assistive-text"&gt;<br/>
+                              Formato: 31 dic 2024<br/>
+                             &lt;/div&gt;<br/>
+                             &lt;div lwc-2fb3f2nu4or="" class="slds-form-element__help" id="error-message-139" data-name="ML_DefendantAwarenessDate" data-error-message="" aria-live="polite"&gt;&lt;/div&gt;<br/>
+                            &lt;/lightning-datepicker&gt;<br/>
+                           &lt;/lightning-input&gt;<br/>
+                          &lt;/div&gt;<br/>
+                         &lt;/flowruntime-input-wrapper2&gt;<br/>
+                        &lt;/flowruntime-flow-screen-input&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_6-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="3"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-flow-screen-input lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;flowruntime-input-wrapper2 lwc-1o2vf6350ba-host=""&gt;<br/>
+                          &lt;div lwc-1o2vf6350ba="" class="flowruntime-input slds-form-element"&gt;<br/>
+                           &lt;div lwc-1o2vf6350ba="" class="flowruntime-input-label"&gt;<br/>
+                            &lt;lightning-formatted-rich-text lwc-1o2vf6350ba="" class="slds-form-element__label slds-rich-text-editor__output" id="input-label-143" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;abbr class="slds-required" title="obligatorio" style="border: none" lwc-4nfn2rc40ch=""&gt;*&lt;/abbr&gt;Fecha de envío a estudio&lt;/span&gt;&lt;!----&gt;<br/>
+                            &lt;/lightning-formatted-rich-text&gt;<br/>
+                           &lt;/div&gt;&lt;lightning-input lwc-1o2vf6350ba="" variant="label-hidden" class="slds-form-element" lwc-66unc5l95ad-host=""&gt;<br/>
+                            &lt;lightning-datepicker lwc-66unc5l95ad="" exportparts="label: label-datepicker, button-icon: button-icon-datepicker" variant="label-hidden" lwc-2fb3f2nu4or-host="" data-position-id="lgcp-1000009"&gt;<br/>
+                             &lt;div lwc-2fb3f2nu4or="" class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_1-of-1" role="group" part="input-text"&gt;<br/>
+                              &lt;div lwc-2fb3f2nu4or="" class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right" part="input-container" data-position-id="lgcp-1000010"&gt;<br/>
+                              &lt;input lwc-2fb3f2nu4or="" class="slds-input" type="text" id="input-146" part="input" name="ML_SentToLawFirmDate" required autocomplete="off" aria-describedby="error-message-146 fmt-text-146" aria-labelledby="input-label-143"&gt;&lt;lightning-button-icon lwc-2fb3f2nu4or="" class="slds-input__icon slds-input__icon_right" exportparts="button-icon" variant="bare" lwc-485vfn4rmof-host=""&gt;<br/>
+                              &lt;button lwc-485vfn4rmof="" class="slds-button slds-button_icon slds-button_icon-bare" title="Seleccionar una fecha para Fecha de envío a estudio" type="button" part="button button-icon"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-485vfn4rmof="" exportparts="icon" variant="bare" lwc-7b6j2skrjne-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 52 52" part="icon" lwc-7b6j2skrjne="" data-key="event" class="slds-button__icon"&gt;<br/>
+                              &lt;g lwc-7b6j2skrjne=""&gt;<br/>
+                              &lt;path d="M46.5 20h-41c-.8 0-1.5.7-1.5 1.5V46a4 4 0 004 4h36a4 4 0 004-4V21.5c0-.8-.7-1.5-1.5-1.5zM19 42c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1zm5-25h-5V5a3 3 0 00-3-3 3 3 0 00-3 3v2H19V5a3 3 0 00-3-3 3 3 0 00-3 3v2H8a4 4 0 00-4 4v2.5c0 .8.7 1.5 1.5 1.5h41c.8 0 1.5-.7 1.5-1.5V11a4 4 0 00-4-4z" lwc-7b6j2skrjne=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;span class="slds-assistive-text" lwc-485vfn4rmof=""&gt;Seleccionar una fecha para Fecha de envío a estudio&lt;/span&gt;&lt;/button&gt;<br/>
+                              &lt;/lightning-button-icon&gt;<br/>
+                              &lt;/div&gt;<br/>
+                             &lt;/div&gt;<br/>
+                             &lt;div data-date-format="" lwc-2fb3f2nu4or="" id="fmt-text-146" data-name="ML_SentToLawFirmDate" class="slds-form-element__help slds-assistive-text"&gt;<br/>
+                              Formato: 31 dic 2024<br/>
+                             &lt;/div&gt;<br/>
+                             &lt;div lwc-2fb3f2nu4or="" class="slds-form-element__help" id="error-message-146" data-name="ML_SentToLawFirmDate" data-error-message="" aria-live="polite"&gt;&lt;/div&gt;<br/>
+                            &lt;/lightning-datepicker&gt;<br/>
+                           &lt;/lightning-input&gt;<br/>
+                          &lt;/div&gt;<br/>
+                         &lt;/flowruntime-input-wrapper2&gt;<br/>
+                        &lt;/flowruntime-flow-screen-input&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-display-text-lwc lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;lightning-formatted-rich-text class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                          &lt;!----&gt;<br/>
+                          &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;br lwc-4nfn2rc40ch=""&gt;&lt;/p&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;br lwc-4nfn2rc40ch=""&gt;&lt;/p&gt;&lt;/span&gt;&lt;!----&gt;<br/>
+                         &lt;/lightning-formatted-rich-text&gt;<br/>
+                        &lt;/flowruntime-display-text-lwc&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-display-text-lwc lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;lightning-formatted-rich-text class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                          &lt;!----&gt;<br/>
+                          &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;strong style="font-size: 16px;" lwc-4nfn2rc40ch=""&gt;2. &lt;/strong&gt;&lt;strong style="font-size: 16px; background-color: rgb(255, 255, 255);" lwc-4nfn2rc40ch=""&gt;Jurisdicción&lt;/strong&gt;&lt;/p&gt;&lt;/span&gt;&lt;!----&gt;<br/>
+                         &lt;/lightning-formatted-rich-text&gt;<br/>
+                        &lt;/flowruntime-display-text-lwc&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="7"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container"&gt;<br/>
+                        &lt;c-ml_location-lookup lwc-3anllt3fi9m="" aria-describedby="" lwc-6snrgmc8h8c-host=""&gt;<br/>
+                         &lt;div lwc-6snrgmc8h8c="" class="slds-form"&gt;<br/>
+                          &lt;div lwc-6snrgmc8h8c="" class="slds-grid slds-gutters"&gt;<br/>
+                           &lt;div lwc-6snrgmc8h8c="" class="slds-col slds-size_1-of-2"&gt;<br/>
+                            &lt;lightning-combobox lwc-6snrgmc8h8c="" class="slds-form-element" lwc-24on3e8rogg-host=""&gt;<br/>
+                             &lt;div lwc-24on3e8rogg="" part="combobox"&gt;<br/>
+                              &lt;span lwc-24on3e8rogg=""&gt;&lt;label lwc-24on3e8rogg="" class="slds-form-element__label" part="label" for="combobox-button-164"&gt;&lt;abbr class="slds-required" part="required" lwc-24on3e8rogg="" title="obligatorio"&gt;*&lt;/abbr&gt;País&lt;/label&gt;&lt;/span&gt;<br/>
+                              &lt;div lwc-24on3e8rogg="" class="slds-form-element__control"&gt;<br/>
+                              &lt;lightning-base-combobox lwc-24on3e8rogg="" exportparts="dropdown, option, input, input-button, input-button-value" class="slds-combobox_container" lwc-4kb6kaqheak-host=""&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-combobox_container"&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click"&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none"&gt;<br/>
+                              &lt;button lwc-4kb6kaqheak="" class="slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value" id="combobox-button-164" type="button" aria-expanded="false" aria-haspopup="listbox" name="country" role="combobox" data-value="Argentina" aria-disabled="false" aria-label="País" aria-required="true" part="input-button" aria-controls="dropdown-element-164" aria-describedby="help-text-163"&gt;&lt;span lwc-4kb6kaqheak="" class="slds-truncate" part="input-button-value"&gt;Argentina&lt;/span&gt;&lt;/button&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-input__icon-group slds-input__icon-group_right"&gt;<br/>
+                              &lt;lightning-icon lwc-4kb6kaqheak="" class="slds-input__icon slds-input__icon_right slds-icon-utility-down slds-icon_container" icon-name="utility:down" lwc-4897l11qtae-host=""&gt;<br/>
+                              &lt;span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="xx-small" variant="" lwc-6qul4k2dv7m-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-6qul4k2dv7m="" data-key="down" class="slds-icon slds-icon-text-default slds-icon_xx-small"&gt;<br/>
+                              &lt;g lwc-6qul4k2dv7m=""&gt;<br/>
+                              &lt;path d="M83 140h354c10 0 17 13 9 22L273 374c-6 8-19 8-25 0L73 162c-7-9-1-22 10-22z" lwc-6qul4k2dv7m=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-icon&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid slds-dropdown_left" id="dropdown-element-164" data-dropdown-element="" role="listbox" part="dropdown overlay" aria-label="País"&gt;<br/>
+                              &lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-0" exportparts="option" data-value="Argentina" role="option" id="combobox-button-164-0-164" aria-checked="true" aria-selected="true" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;<br/>
+                              &lt;lightning-icon lwc-7co8ha3nedg="" icon-name="utility:check" class="slds-icon-utility-check slds-icon_container" lwc-4897l11qtae-host=""&gt;<br/>
+                              &lt;span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="x-small" variant="" lwc-1e39mgvor8u-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-1e39mgvor8u="" data-key="check" class="slds-icon slds-icon-text-default slds-icon_x-small"&gt;<br/>
+                              &lt;g lwc-1e39mgvor8u=""&gt;<br/>
+                              &lt;path d="M191 425L26 259c-6-6-6-16 0-22l22-22c6-6 16-6 22 0l124 125a10 10 0 0015 0L452 95c6-6 16-6 22 0l22 22c6 6 6 16 0 22L213 425c-6 7-16 7-22 0z" lwc-1e39mgvor8u=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-icon&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Argentina"&gt;Argentina&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-1" exportparts="option" data-value="Brasil" role="option" id="combobox-button-164-1-164" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Brasil"&gt;Brasil&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-2" exportparts="option" data-value="Chile" role="option" id="combobox-button-164-2-164" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Chile"&gt;Chile&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-3" exportparts="option" data-value="China" role="option" id="combobox-button-164-3-164" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="China"&gt;China&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-4" exportparts="option" data-value="Colombia" role="option" id="combobox-button-164-4-164" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Colombia"&gt;Colombia&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-5" exportparts="option" data-value="Ecuador" role="option" id="combobox-button-164-5-164" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Ecuador"&gt;Ecuador&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-6" exportparts="option" data-value="Estados Unidos" role="option" id="combobox-button-164-6-164" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Estados Unidos"&gt;Estados Unidos&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-7" exportparts="option" data-value="Mexico" role="option" id="combobox-button-164-7-164" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="México"&gt;México&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-8" exportparts="option" data-value="Paraguay" role="option" id="combobox-button-164-8-164" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Paraguay"&gt;Paraguay&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-9" exportparts="option" data-value="Perú" role="option" id="combobox-button-164-9-164" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Perú"&gt;Perú&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-10" exportparts="option" data-value="Venezuela" role="option" id="combobox-button-164-10-164" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Venezuela"&gt;Venezuela&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-164-11" exportparts="option" data-value="Uruguay" role="option" id="combobox-button-164-11-164" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Uruguay"&gt;Uruguay&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/lightning-base-combobox&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;div lwc-24on3e8rogg="" role="status"&gt;<br/>
+                              &lt;div lwc-24on3e8rogg="" class="slds-form-element__help" id="help-text-163" data-help-text=""&gt;&lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                             &lt;/div&gt;<br/>
+                            &lt;/lightning-combobox&gt;<br/>
+                           &lt;/div&gt;<br/>
+                           &lt;div lwc-6snrgmc8h8c="" class="slds-col slds-size_1-of-2"&gt;<br/>
+                            &lt;lightning-combobox lwc-6snrgmc8h8c="" class="slds-form-element" lwc-24on3e8rogg-host=""&gt;<br/>
+                             &lt;div lwc-24on3e8rogg="" part="combobox"&gt;<br/>
+                              &lt;span lwc-24on3e8rogg=""&gt;&lt;label lwc-24on3e8rogg="" class="slds-form-element__label" part="label" for="combobox-button-168"&gt;&lt;abbr class="slds-required" part="required" lwc-24on3e8rogg="" title="obligatorio"&gt;*&lt;/abbr&gt;Estado/Provincia&lt;/label&gt;&lt;/span&gt;<br/>
+                              &lt;div lwc-24on3e8rogg="" class="slds-form-element__control"&gt;<br/>
+                              &lt;lightning-base-combobox lwc-24on3e8rogg="" exportparts="dropdown, option, input, input-button, input-button-value" class="slds-combobox_container" lwc-4kb6kaqheak-host=""&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-combobox_container"&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click"&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none"&gt;<br/>
+                              &lt;button lwc-4kb6kaqheak="" class="slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value" id="combobox-button-168" type="button" aria-expanded="false" aria-haspopup="listbox" name="state" role="combobox" data-value="Buenos Aires" aria-disabled="false" aria-label="Estado/Provincia" aria-required="true" part="input-button" aria-controls="dropdown-element-168" aria-describedby="help-text-167"&gt;&lt;span lwc-4kb6kaqheak="" class="slds-truncate" part="input-button-value"&gt;Buenos Aires&lt;/span&gt;&lt;/button&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-input__icon-group slds-input__icon-group_right"&gt;<br/>
+                              &lt;lightning-icon lwc-4kb6kaqheak="" class="slds-input__icon slds-input__icon_right slds-icon-utility-down slds-icon_container" icon-name="utility:down" lwc-4897l11qtae-host=""&gt;<br/>
+                              &lt;span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="xx-small" variant="" lwc-6qul4k2dv7m-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-6qul4k2dv7m="" data-key="down" class="slds-icon slds-icon-text-default slds-icon_xx-small"&gt;<br/>
+                              &lt;g lwc-6qul4k2dv7m=""&gt;<br/>
+                              &lt;path d="M83 140h354c10 0 17 13 9 22L273 374c-6 8-19 8-25 0L73 162c-7-9-1-22 10-22z" lwc-6qul4k2dv7m=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-icon&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid slds-dropdown_left" id="dropdown-element-168" data-dropdown-element="" role="listbox" part="dropdown overlay" aria-label="Estado/Provincia"&gt;<br/>
+                              &lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-0" exportparts="option" data-value="Buenos Aires" role="option" id="combobox-button-168-0-168" aria-checked="true" aria-selected="true" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;<br/>
+                              &lt;lightning-icon lwc-7co8ha3nedg="" icon-name="utility:check" class="slds-icon-utility-check slds-icon_container" lwc-4897l11qtae-host=""&gt;<br/>
+                              &lt;span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="x-small" variant="" lwc-1e39mgvor8u-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-1e39mgvor8u="" data-key="check" class="slds-icon slds-icon-text-default slds-icon_x-small"&gt;<br/>
+                              &lt;g lwc-1e39mgvor8u=""&gt;<br/>
+                              &lt;path d="M191 425L26 259c-6-6-6-16 0-22l22-22c6-6 16-6 22 0l124 125a10 10 0 0015 0L452 95c6-6 16-6 22 0l22 22c6 6 6 16 0 22L213 425c-6 7-16 7-22 0z" lwc-1e39mgvor8u=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-icon&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Buenos Aires"&gt;Buenos Aires&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-1" exportparts="option" data-value="Capital Federal" role="option" id="combobox-button-168-1-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Capital Federal"&gt;Capital Federal&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-2" exportparts="option" data-value="Catamarca" role="option" id="combobox-button-168-2-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Catamarca"&gt;Catamarca&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-3" exportparts="option" data-value="Chaco" role="option" id="combobox-button-168-3-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Chaco"&gt;Chaco&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-4" exportparts="option" data-value="Chubut" role="option" id="combobox-button-168-4-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Chubut"&gt;Chubut&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-5" exportparts="option" data-value="Córdoba" role="option" id="combobox-button-168-5-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Córdoba"&gt;Córdoba&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-6" exportparts="option" data-value="Corrientes" role="option" id="combobox-button-168-6-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Corrientes"&gt;Corrientes&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-7" exportparts="option" data-value="Entre Ríos" role="option" id="combobox-button-168-7-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Entre Ríos"&gt;Entre Ríos&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-8" exportparts="option" data-value="Formosa" role="option" id="combobox-button-168-8-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Formosa"&gt;Formosa&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-9" exportparts="option" data-value="Jujuy" role="option" id="combobox-button-168-9-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Jujuy"&gt;Jujuy&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-10" exportparts="option" data-value="La Pampa" role="option" id="combobox-button-168-10-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="La Pampa"&gt;La Pampa&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-11" exportparts="option" data-value="La Rioja" role="option" id="combobox-button-168-11-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="La Rioja"&gt;La Rioja&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-12" exportparts="option" data-value="Mendoza" role="option" id="combobox-button-168-12-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Mendoza"&gt;Mendoza&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-13" exportparts="option" data-value="Misiones" role="option" id="combobox-button-168-13-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Misiones"&gt;Misiones&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-14" exportparts="option" data-value="Neuquén" role="option" id="combobox-button-168-14-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Neuquén"&gt;Neuquén&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-15" exportparts="option" data-value="Río Negro" role="option" id="combobox-button-168-15-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Río Negro"&gt;Río Negro&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-16" exportparts="option" data-value="Salta" role="option" id="combobox-button-168-16-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Salta"&gt;Salta&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-17" exportparts="option" data-value="San Juan" role="option" id="combobox-button-168-17-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="San Juan"&gt;San Juan&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-18" exportparts="option" data-value="San Luis" role="option" id="combobox-button-168-18-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="San Luis"&gt;San Luis&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-19" exportparts="option" data-value="Santa Cruz" role="option" id="combobox-button-168-19-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Santa Cruz"&gt;Santa Cruz&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-20" exportparts="option" data-value="Santa Fe" role="option" id="combobox-button-168-20-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Santa Fe"&gt;Santa Fe&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-21" exportparts="option" data-value="Santiago del Estero" role="option" id="combobox-button-168-21-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Santiago del Estero"&gt;Santiago del Estero&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-22" exportparts="option" data-value="Tierra del Fuego" role="option" id="combobox-button-168-22-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Tierra del Fuego"&gt;Tierra del Fuego&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-168-23" exportparts="option" data-value="Tucumán" role="option" id="combobox-button-168-23-168" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Tucumán"&gt;Tucumán&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/lightning-base-combobox&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;div lwc-24on3e8rogg="" role="status"&gt;<br/>
+                              &lt;div lwc-24on3e8rogg="" class="slds-form-element__help" id="help-text-167" data-help-text=""&gt;&lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                             &lt;/div&gt;<br/>
+                            &lt;/lightning-combobox&gt;<br/>
+                           &lt;/div&gt;<br/>
+                          &lt;/div&gt;<br/>
+                          &lt;div lwc-6snrgmc8h8c="" class="slds-grid slds-gutters slds-m-top_small"&gt;<br/>
+                           &lt;div lwc-6snrgmc8h8c="" class="slds-col slds-size_1-of-2"&gt;<br/>
+                            &lt;div lwc-6snrgmc8h8c="" class="lookup"&gt;<br/>
+                             &lt;div lwc-6snrgmc8h8c=""&gt;<br/>
+                              &lt;lightning-input lwc-6snrgmc8h8c="" class="slds-form-element" lwc-66unc5l95ad-host=""&gt;<br/>
+                              &lt;lightning-primitive-input-simple lwc-66unc5l95ad="" exportparts="input-text, input-container, input, required, label" lwc-enmikoh2qu-host="" variant="standard"&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" part="input-text" populated=""&gt;<br/>
+                              &lt;label lwc-enmikoh2qu="" class="slds-form-element__label slds-no-flex" for="input-172" part="label"&gt;&lt;abbr class="slds-required" part="required" aria-hidden="true" lwc-enmikoh2qu="" title="obligatorio"&gt;*&lt;/abbr&gt;Municipio<br/>
+                              &lt;slot lwc-enmikoh2qu="" name="label-end"&gt;<br/>
+                              &lt;slot lwc-66unc5l95ad="" name="label-end" slot="label-end"&gt;&lt;/slot&gt;<br/>
+                              &lt;/slot&gt;&lt;/label&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" class="slds-form-element__control slds-grow slds-input-has-icon slds-input-has-icon_left-right" part="input-container" type="search"&gt;<br/>
+                              &lt;input class="slds-input" part="input" lwc-enmikoh2qu="" id="input-172" placeholder="Ingresá el municipio…" required type="search" aria-describedby="help-message-172" aria-invalid="false"&gt;&lt;lightning-primitive-icon lwc-enmikoh2qu="" variant="bare" lwc-45bd2ao4vb7-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-45bd2ao4vb7="" data-key="search" class="slds-input__icon slds-input__icon_left slds-icon-text-default"&gt;<br/>
+                              &lt;g lwc-45bd2ao4vb7=""&gt;<br/>
+                              &lt;path d="M496 453L362 320a189 189 0 10-340-92 190 190 0 00298 135l133 133a14 14 0 0021 0l21-21a17 17 0 001-22zM210 338a129 129 0 11130-130 129 129 0 01-130 130z" lwc-45bd2ao4vb7=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" class="slds-input__icon-group slds-input__icon-group_right"&gt;<br/>
+                              &lt;button lwc-enmikoh2qu="" class="slds-input__icon slds-input__icon_right slds-button slds-button_icon" data-element-id="searchClear" type="button"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-enmikoh2qu="" variant="bare" lwc-qipn4g7k23-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-qipn4g7k23="" data-key="clear" class="slds-button__icon"&gt;<br/>
+                              &lt;g lwc-qipn4g7k23=""&gt;<br/>
+                              &lt;path d="M260 20a240 240 0 100 480 240 240 0 100-480zm49 248l78 78c4 4 4 10 0 14l-28 28a10 10 0 01-14 0l-78-78a10 10 0 00-14 0l-78 78a10 10 0 01-14 0l-28-28a10 10 0 010-14l78-78c4-4 4-10 0-14l-79-79a10 10 0 010-14l28-28a10 10 0 0114 0l79 79c4 4 10 4 14 0l78-78a10 10 0 0114 0l28 28c4 4 4 10 0 14l-78 78c-3 4-3 10 0 14z" lwc-qipn4g7k23=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;span class="slds-assistive-text" lwc-enmikoh2qu=""&gt;Borrar&lt;/span&gt;&lt;/button&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" class="slds-form-element__help slds-m-left_none" id="help-message-172" data-help-message="" part="help-text" aria-live="polite"&gt;&lt;/div&gt;<br/>
+                              &lt;/lightning-primitive-input-simple&gt;<br/>
+                              &lt;/lightning-input&gt;<br/>
+                             &lt;/div&gt;<br/>
+                            &lt;/div&gt;<br/>
+                           &lt;/div&gt;<br/>
+                           &lt;div lwc-6snrgmc8h8c="" class="slds-col slds-size_1-of-2"&gt;<br/>
+                            &lt;div lwc-6snrgmc8h8c="" class="lookup"&gt;<br/>
+                             &lt;div lwc-6snrgmc8h8c=""&gt;<br/>
+                              &lt;lightning-input lwc-6snrgmc8h8c="" class="slds-form-element" lwc-66unc5l95ad-host=""&gt;<br/>
+                              &lt;lightning-primitive-input-simple lwc-66unc5l95ad="" exportparts="input-text, input-container, input, required, label" lwc-enmikoh2qu-host="" variant="standard"&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" part="input-text" populated=""&gt;<br/>
+                              &lt;label lwc-enmikoh2qu="" class="slds-form-element__label slds-no-flex" for="input-175" part="label"&gt;&lt;abbr class="slds-required" part="required" aria-hidden="true" lwc-enmikoh2qu="" title="obligatorio"&gt;*&lt;/abbr&gt;Ciudad<br/>
+                              &lt;slot lwc-enmikoh2qu="" name="label-end"&gt;<br/>
+                              &lt;slot lwc-66unc5l95ad="" name="label-end" slot="label-end"&gt;&lt;/slot&gt;<br/>
+                              &lt;/slot&gt;&lt;/label&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" class="slds-form-element__control slds-grow slds-input-has-icon slds-input-has-icon_left-right" part="input-container" type="search"&gt;<br/>
+                              &lt;input class="slds-input" part="input" lwc-enmikoh2qu="" id="input-175" placeholder="Ingresá la ciudad…" required type="search" aria-describedby="help-message-175" aria-invalid="false"&gt;&lt;lightning-primitive-icon lwc-enmikoh2qu="" variant="bare" lwc-45bd2ao4vb7-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-45bd2ao4vb7="" data-key="search" class="slds-input__icon slds-input__icon_left slds-icon-text-default"&gt;<br/>
+                              &lt;g lwc-45bd2ao4vb7=""&gt;<br/>
+                              &lt;path d="M496 453L362 320a189 189 0 10-340-92 190 190 0 00298 135l133 133a14 14 0 0021 0l21-21a17 17 0 001-22zM210 338a129 129 0 11130-130 129 129 0 01-130 130z" lwc-45bd2ao4vb7=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" class="slds-input__icon-group slds-input__icon-group_right"&gt;<br/>
+                              &lt;button lwc-enmikoh2qu="" class="slds-input__icon slds-input__icon_right slds-button slds-button_icon" data-element-id="searchClear" type="button"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-enmikoh2qu="" variant="bare" lwc-qipn4g7k23-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-qipn4g7k23="" data-key="clear" class="slds-button__icon"&gt;<br/>
+                              &lt;g lwc-qipn4g7k23=""&gt;<br/>
+                              &lt;path d="M260 20a240 240 0 100 480 240 240 0 100-480zm49 248l78 78c4 4 4 10 0 14l-28 28a10 10 0 01-14 0l-78-78a10 10 0 00-14 0l-78 78a10 10 0 01-14 0l-28-28a10 10 0 010-14l78-78c4-4 4-10 0-14l-79-79a10 10 0 010-14l28-28a10 10 0 0114 0l79 79c4 4 10 4 14 0l78-78a10 10 0 0114 0l28 28c4 4 4 10 0 14l-78 78c-3 4-3 10 0 14z" lwc-qipn4g7k23=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;span class="slds-assistive-text" lwc-enmikoh2qu=""&gt;Borrar&lt;/span&gt;&lt;/button&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" class="slds-form-element__help slds-m-left_none" id="help-message-175" data-help-message="" part="help-text" aria-live="polite"&gt;&lt;/div&gt;<br/>
+                              &lt;/lightning-primitive-input-simple&gt;<br/>
+                              &lt;/lightning-input&gt;<br/>
+                             &lt;/div&gt;<br/>
+                            &lt;/div&gt;<br/>
+                           &lt;/div&gt;<br/>
+                          &lt;/div&gt;<br/>
+                          &lt;div lwc-6snrgmc8h8c="" class="slds-grid slds-gutters slds-m-top_small"&gt;<br/>
+                           &lt;div lwc-6snrgmc8h8c="" class="slds-col slds-size_1-of-2"&gt;<br/>
+                            &lt;lightning-combobox lwc-6snrgmc8h8c="" class="slds-form-element" lwc-24on3e8rogg-host=""&gt;<br/>
+                             &lt;div lwc-24on3e8rogg="" part="combobox"&gt;<br/>
+                              &lt;span lwc-24on3e8rogg=""&gt;&lt;label lwc-24on3e8rogg="" class="slds-form-element__label" part="label" for="combobox-button-178"&gt;&lt;abbr class="slds-required" part="required" lwc-24on3e8rogg="" title="obligatorio"&gt;*&lt;/abbr&gt;Justicia&lt;/label&gt;&lt;/span&gt;<br/>
+                              &lt;div lwc-24on3e8rogg="" class="slds-form-element__control"&gt;<br/>
+                              &lt;lightning-base-combobox lwc-24on3e8rogg="" exportparts="dropdown, option, input, input-button, input-button-value" class="slds-combobox_container" lwc-4kb6kaqheak-host=""&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-combobox_container"&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click"&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none"&gt;<br/>
+                              &lt;button lwc-4kb6kaqheak="" class="slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value" id="combobox-button-178" type="button" aria-expanded="false" aria-haspopup="listbox" name="justice" role="combobox" data-value="Administrativa" aria-disabled="false" aria-label="Justicia" aria-required="true" part="input-button" aria-controls="dropdown-element-178" aria-describedby="help-text-177"&gt;&lt;span lwc-4kb6kaqheak="" class="slds-truncate" part="input-button-value"&gt;Administrativa&lt;/span&gt;&lt;/button&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-input__icon-group slds-input__icon-group_right"&gt;<br/>
+                              &lt;lightning-icon lwc-4kb6kaqheak="" class="slds-input__icon slds-input__icon_right slds-icon-utility-down slds-icon_container" icon-name="utility:down" lwc-4897l11qtae-host=""&gt;<br/>
+                              &lt;span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="xx-small" variant="" lwc-6qul4k2dv7m-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-6qul4k2dv7m="" data-key="down" class="slds-icon slds-icon-text-default slds-icon_xx-small"&gt;<br/>
+                              &lt;g lwc-6qul4k2dv7m=""&gt;<br/>
+                              &lt;path d="M83 140h354c10 0 17 13 9 22L273 374c-6 8-19 8-25 0L73 162c-7-9-1-22 10-22z" lwc-6qul4k2dv7m=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-icon&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;div lwc-4kb6kaqheak="" class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid slds-dropdown_left" id="dropdown-element-178" data-dropdown-element="" role="listbox" part="dropdown overlay" aria-label="Justicia"&gt;<br/>
+                              &lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-178-0" exportparts="option" data-value="Provincial" role="option" id="combobox-button-178-0-178" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Provincial"&gt;Provincial&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-178-1" exportparts="option" data-value="Nacional" role="option" id="combobox-button-178-1-178" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Nacional"&gt;Nacional&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;&lt;lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-178-2" exportparts="option" data-value="Administrativa" role="option" id="combobox-button-178-2-178" aria-checked="true" aria-selected="true" lwc-7co8ha3nedg-host=""&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"&gt;<br/>
+                              &lt;lightning-icon lwc-7co8ha3nedg="" icon-name="utility:check" class="slds-icon-utility-check slds-icon_container" lwc-4897l11qtae-host=""&gt;<br/>
+                              &lt;span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="x-small" variant="" lwc-1e39mgvor8u-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-1e39mgvor8u="" data-key="check" class="slds-icon slds-icon-text-default slds-icon_x-small"&gt;<br/>
+                              &lt;g lwc-1e39mgvor8u=""&gt;<br/>
+                              &lt;path d="M191 425L26 259c-6-6-6-16 0-22l22-22c6-6 16-6 22 0l124 125a10 10 0 0015 0L452 95c6-6 16-6 22 0l22 22c6 6 6 16 0 22L213 425c-6 7-16 7-22 0z" lwc-1e39mgvor8u=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-icon&gt;&lt;/span&gt;<br/>
+                              &lt;span lwc-7co8ha3nedg="" class="slds-media__body"&gt;&lt;span lwc-7co8ha3nedg="" title="Administrativa"&gt;Administrativa&lt;/span&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-base-combobox-item&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/lightning-base-combobox&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;div lwc-24on3e8rogg="" role="status"&gt;<br/>
+                              &lt;div lwc-24on3e8rogg="" class="slds-form-element__help" id="help-text-177" data-help-text=""&gt;&lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                             &lt;/div&gt;<br/>
+                            &lt;/lightning-combobox&gt;<br/>
+                           &lt;/div&gt;<br/>
+                           &lt;div lwc-6snrgmc8h8c="" class="slds-col slds-size_1-of-2"&gt;<br/>
+                            &lt;div lwc-6snrgmc8h8c="" class="lookup"&gt;<br/>
+                             &lt;div lwc-6snrgmc8h8c=""&gt;<br/>
+                              &lt;lightning-input lwc-6snrgmc8h8c="" class="slds-form-element" lwc-66unc5l95ad-host=""&gt;<br/>
+                              &lt;lightning-primitive-input-simple lwc-66unc5l95ad="" exportparts="input-text, input-container, input, required, label" lwc-enmikoh2qu-host="" variant="standard"&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" part="input-text" populated=""&gt;<br/>
+                              &lt;label lwc-enmikoh2qu="" class="slds-form-element__label slds-no-flex" for="input-182" part="label"&gt;&lt;abbr class="slds-required" part="required" aria-hidden="true" lwc-enmikoh2qu="" title="obligatorio"&gt;*&lt;/abbr&gt;Autoridad/Organismo<br/>
+                              &lt;slot lwc-enmikoh2qu="" name="label-end"&gt;<br/>
+                              &lt;slot lwc-66unc5l95ad="" name="label-end" slot="label-end"&gt;&lt;/slot&gt;<br/>
+                              &lt;/slot&gt;&lt;/label&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" class="slds-form-element__control slds-grow slds-input-has-icon slds-input-has-icon_left-right" part="input-container" type="search"&gt;<br/>
+                              &lt;input class="slds-input" part="input" lwc-enmikoh2qu="" id="input-182" placeholder="Ingresá la autoridad…" required type="search" aria-describedby="help-message-182" aria-invalid="false"&gt;&lt;lightning-primitive-icon lwc-enmikoh2qu="" variant="bare" lwc-45bd2ao4vb7-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-45bd2ao4vb7="" data-key="search" class="slds-input__icon slds-input__icon_left slds-icon-text-default"&gt;<br/>
+                              &lt;g lwc-45bd2ao4vb7=""&gt;<br/>
+                              &lt;path d="M496 453L362 320a189 189 0 10-340-92 190 190 0 00298 135l133 133a14 14 0 0021 0l21-21a17 17 0 001-22zM210 338a129 129 0 11130-130 129 129 0 01-130 130z" lwc-45bd2ao4vb7=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" class="slds-input__icon-group slds-input__icon-group_right"&gt;<br/>
+                              &lt;button lwc-enmikoh2qu="" class="slds-input__icon slds-input__icon_right slds-button slds-button_icon" data-element-id="searchClear" type="button"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-enmikoh2qu="" variant="bare" lwc-qipn4g7k23-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-qipn4g7k23="" data-key="clear" class="slds-button__icon"&gt;<br/>
+                              &lt;g lwc-qipn4g7k23=""&gt;<br/>
+                              &lt;path d="M260 20a240 240 0 100 480 240 240 0 100-480zm49 248l78 78c4 4 4 10 0 14l-28 28a10 10 0 01-14 0l-78-78a10 10 0 00-14 0l-78 78a10 10 0 01-14 0l-28-28a10 10 0 010-14l78-78c4-4 4-10 0-14l-79-79a10 10 0 010-14l28-28a10 10 0 0114 0l79 79c4 4 10 4 14 0l78-78a10 10 0 0114 0l28 28c4 4 4 10 0 14l-78 78c-3 4-3 10 0 14z" lwc-qipn4g7k23=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;span class="slds-assistive-text" lwc-enmikoh2qu=""&gt;Borrar&lt;/span&gt;&lt;/button&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;/div&gt;<br/>
+                              &lt;div lwc-enmikoh2qu="" class="slds-form-element__help slds-m-left_none" id="help-message-182" data-help-message="" part="help-text" aria-live="polite"&gt;&lt;/div&gt;<br/>
+                              &lt;/lightning-primitive-input-simple&gt;<br/>
+                              &lt;/lightning-input&gt;<br/>
+                             &lt;/div&gt;<br/>
+                            &lt;/div&gt;<br/>
+                           &lt;/div&gt;<br/>
+                          &lt;/div&gt;<br/>
+                         &lt;/div&gt;<br/>
+                        &lt;/c-ml_location-lookup&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-display-text-lwc lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;lightning-formatted-rich-text class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                          &lt;!----&gt;<br/>
+                          &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;strong style="font-size: 16px;" lwc-4nfn2rc40ch=""&gt;3. Mercado Libre&lt;/strong&gt;&lt;/p&gt;&lt;/span&gt;&lt;!----&gt;<br/>
+                         &lt;/lightning-formatted-rich-text&gt;<br/>
+                        &lt;/flowruntime-display-text-lwc&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                      &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                      &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                       &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                        &lt;flowruntime-display-text-lwc lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                         &lt;lightning-formatted-rich-text class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                          &lt;!----&gt;<br/>
+                          &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;/p&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;br lwc-4nfn2rc40ch=""&gt;&lt;/p&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;br lwc-4nfn2rc40ch=""&gt;&lt;/p&gt;&lt;/span&gt;&lt;!----&gt;<br/>
+                         &lt;/lightning-formatted-rich-text&gt;<br/>
+                        &lt;/flowruntime-display-text-lwc&gt;<br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/flowruntime-lwc-field&gt;<br/>
+                     &lt;/flowruntime-screen-field&gt;<br/>
+                    &lt;/div&gt;<br/>
+                   &lt;/flowruntime-base-section&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/flowruntime-list-container&gt;<br/>
+                &lt;/flowruntime-screen-field&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/flowruntime-base-section&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/flowruntime-list-container&gt;<br/>
+           &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+            &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+            &lt;flowruntime-list-container&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+               &lt;div lwc-6aa2906q6hj="" class="section slds-grid slds-gutters_direct slds-wrap"&gt;<br/>
+                &lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-section-column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"&gt;<br/>
+                 &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                 &lt;flowruntime-list-container&gt;<br/>
+                  &lt;div&gt;<br/>
+                   &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+                    &lt;div lwc-6aa2906q6hj="" class="slds-grid slds-wrap slds-gutters_direct"&gt;&lt;/div&gt;<br/>
+                   &lt;/flowruntime-base-section&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/flowruntime-list-container&gt;<br/>
+                &lt;/flowruntime-screen-field&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/flowruntime-base-section&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/flowruntime-list-container&gt;<br/>
+           &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12"&gt;<br/>
+            &lt;div data-render-key="2"&gt;&lt;/div&gt;<br/>
+            &lt;flowruntime-list-container&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;flowruntime-repeater&gt;<br/>
+               &lt;div class="slds-grid slds-wrap slds-gutters_direct"&gt;<br/>
+                &lt;flowruntime-screen-field class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                 &lt;div data-render-key="2"&gt;&lt;/div&gt;<br/>
+                 &lt;flowruntime-list-container&gt;<br/>
+                  &lt;div&gt;<br/>
+                   &lt;flowruntime-repeater-instance lwc-56c56pgoqld-host=""&gt;<br/>
+                    &lt;fieldset lwc-56c56pgoqld="" class="slds-card slds-card_boundary slds-p-around_small slds-m-bottom_medium card-container" tabindex="-1"&gt;<br/>
+                     &lt;legend class="slds-assistive-text" lwc-56c56pgoqld=""&gt;ML MercadoLibreCompany instancia 1&lt;/legend&gt;<br/>
+                     &lt;div lwc-56c56pgoqld="" class="slds-grid slds-wrap slds-gutters_direct"&gt;<br/>
+                      &lt;flowruntime-screen-field lwc-56c56pgoqld="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                       &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                       &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                        &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                         &lt;flowruntime-display-text-lwc lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                          &lt;lightning-formatted-rich-text class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                           &lt;!----&gt;<br/>
+                           &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;br lwc-4nfn2rc40ch=""&gt;&lt;/p&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;br lwc-4nfn2rc40ch=""&gt;&lt;/p&gt;&lt;p lwc-4nfn2rc40ch=""&gt;&lt;br lwc-4nfn2rc40ch=""&gt;&lt;/p&gt;&lt;/span&gt;&lt;!----&gt;<br/>
+                          &lt;/lightning-formatted-rich-text&gt;<br/>
+                         &lt;/flowruntime-display-text-lwc&gt;<br/>
+                        &lt;/div&gt;<br/>
+                       &lt;/flowruntime-lwc-field&gt;<br/>
+                      &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-56c56pgoqld="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                       &lt;div data-render-key="2"&gt;&lt;/div&gt;<br/>
+                       &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                        &lt;div lwc-3anllt3fi9m="" class="container"&gt;<br/>
+                         &lt;c-ml_account-lookup-by-country lwc-3anllt3fi9m="" aria-describedby=""&gt;<br/>
+                          &lt;div class="slds-form-element"&gt;<br/>
+                           &lt;label class="slds-form-element__label"&gt;&lt;abbr class="slds-required" title="required"&gt;*&lt;/abbr&gt;Empresas disponibles&lt;/label&gt;<br/>
+                           &lt;div class="slds-form-element__control"&gt;<br/>
+                            &lt;div class="slds-combobox_container slds-has-inline-listbox"&gt;<br/>
+                             &lt;div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" role="combobox" aria-expanded="false" aria-haspopup="listbox"&gt;<br/>
+                              &lt;div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left"&gt;<br/>
+                              &lt;span class="slds-icon_container slds-input__icon slds-input__icon_left"&gt;<br/>
+                              &lt;lightning-icon icon-name="utility:search" class="slds-icon-utility-search slds-icon_container" lwc-4897l11qtae-host=""&gt;<br/>
+                              &lt;span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary"&gt;<br/>
+                              &lt;lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="x-small" variant="" lwc-45bd2ao4vb7-host=""&gt;<br/>
+                              &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-45bd2ao4vb7="" data-key="search" class="slds-icon slds-icon-text-default slds-icon_x-small"&gt;<br/>
+                              &lt;g lwc-45bd2ao4vb7=""&gt;<br/>
+                              &lt;path d="M496 453L362 320a189 189 0 10-340-92 190 190 0 00298 135l133 133a14 14 0 0021 0l21-21a17 17 0 001-22zM210 338a129 129 0 11130-130 129 129 0 01-130 130z" lwc-45bd2ao4vb7=""&gt;&lt;/path&gt;<br/>
+                              &lt;/g&gt;<br/>
+                              &lt;/svg&gt;<br/>
+                              &lt;/lightning-primitive-icon&gt;&lt;/span&gt;<br/>
+                              &lt;/lightning-icon&gt;&lt;/span&gt;&lt;input class="slds-input" type="text" placeholder="Buscar empresa…" required&gt;<br/>
+                              &lt;/div&gt;<br/>
+                             &lt;/div&gt;<br/>
+                            &lt;/div&gt;<br/>
+                           &lt;/div&gt;<br/>
+                          &lt;/div&gt;<br/>
+                         &lt;/c-ml_account-lookup-by-country&gt;<br/>
+                        &lt;/div&gt;<br/>
+                       &lt;/flowruntime-lwc-field&gt;<br/>
+                      &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-56c56pgoqld="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+                       &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                       &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+                        &lt;div lwc-3anllt3fi9m="" class="container slds-m-bottom_x-small"&gt;<br/>
+                         &lt;flowruntime-picklist-input-lwc lwc-3anllt3fi9m="" aria-describedby="" lwc-tnmta5dbnt-host=""&gt;<br/>
+                          &lt;div lwc-tnmta5dbnt="" class="flowruntime-input slds-form-element"&gt;<br/>
+                           &lt;div lwc-tnmta5dbnt="" class="flowruntime-input-label"&gt;<br/>
+                            &lt;abbr class="slds-required" lwc-tnmta5dbnt="" title="obligatorio"&gt;*&lt;/abbr&gt;&lt;lightning-formatted-rich-text lwc-tnmta5dbnt="" class="slds-form-element__label slds-rich-text-editor__output" id="input-label-159" lwc-4nfn2rc40ch-host=""&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;span lwc-4nfn2rc40ch="" part="formatted-rich-text"&gt;Rol de la empresa&lt;/span&gt;&lt;!----&gt;<br/>
+                            &lt;/lightning-formatted-rich-text&gt;<br/>
+                           &lt;/div&gt;&lt;lightning-select lwc-tnmta5dbnt="" variant="label-hidden" class="slds-form-element" lwc-184g1ot50fv-host=""&gt;<br/>
+                            &lt;label lwc-184g1ot50fv="" class="slds-form-element__label slds-assistive-text" for="select-161" part="select-label"&gt;&lt;abbr class="slds-required" part="required" lwc-184g1ot50fv="" title="obligatorio"&gt;*&lt;/abbr&gt;Rol de la empresa&lt;/label&gt;<br/>
+                            &lt;div lwc-184g1ot50fv="" class="slds-form-element__control"&gt;<br/>
+                             &lt;div lwc-184g1ot50fv="" class="slds-select_container"&gt;<br/>
+                              &lt;select lwc-184g1ot50fv="" class="slds-select" id="select-161" name="ML_MercadoLibreCompany[0]__Role" required part="select" aria-labelledby="input-label-159"&gt;&lt;option lwc-184g1ot50fv="" value="FlowImplicit__DefaultTextChoiceName"&gt;--Ninguno--&lt;/option&gt;&lt;option lwc-184g1ot50fv="" value="ML_RolPicklist.Demandado"&gt;Demandado&lt;/option&gt;&lt;option lwc-184g1ot50fv="" value="ML_RolPicklist.Demandante"&gt;Demandante&lt;/option&gt;&lt;option lwc-184g1ot50fv="" value="ML_RolPicklist.No involucrado"&gt;No involucrado&lt;/option&gt;&lt;option lwc-184g1ot50fv="" value="ML_RolPicklist.Interesado"&gt;Interesado&lt;/option&gt;&lt;/select&gt;<br/>
+                             &lt;/div&gt;<br/>
+                            &lt;/div&gt;<br/>
+                            &lt;div lwc-184g1ot50fv="" role="status"&gt;&lt;/div&gt;<br/>
+                           &lt;/lightning-select&gt;<br/>
+                          &lt;/div&gt;<br/>
+                         &lt;/flowruntime-picklist-input-lwc&gt;<br/>
+                        &lt;/div&gt;<br/>
+                       &lt;/flowruntime-lwc-field&gt;<br/>
+                      &lt;/flowruntime-screen-field&gt;<br/>
+                     &lt;/div&gt;<br/>
+                     &lt;div lwc-56c56pgoqld="" class="slds-grid slds-grid_align-end slds-size_1-of-1"&gt;<br/>
+                      &lt;lightning-button lwc-56c56pgoqld="" class="slds-button slds-float_right slds-m-top_x-small" variant="destructive-text" lwc-40a585din3p-host=""&gt;<br/>
+                       &lt;button lwc-40a585din3p="" class="slds-button slds-button_text-destructive" aria-disabled="false" title="Eliminar" type="button" aria-label="ML MercadoLibreCompany instancia 1" part="button" kx-scope="button-outline" kx-type="ripple"&gt;Eliminar&lt;/button&gt;<br/>
+                      &lt;/lightning-button&gt;<br/>
+                     &lt;/div&gt;<br/>
+                    &lt;/fieldset&gt;<br/>
+                   &lt;/flowruntime-repeater-instance&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/flowruntime-list-container&gt;<br/>
+                &lt;/flowruntime-screen-field&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;lightning-button class="slds-button slds-m-bottom_x-small" variant="neutral" lwc-40a585din3p-host=""&gt;<br/>
+                &lt;button lwc-40a585din3p="" class="slds-button slds-button_neutral" aria-disabled="false" title="Agregar" type="button" aria-label="ML MercadoLibreCompany" part="button" kx-scope="button-neutral" kx-type="ripple"&gt;<br/>
+                 &lt;lightning-primitive-icon lwc-40a585din3p="" part="start" variant="bare" lwc-3220386utb1-host=""&gt;<br/>
+                  &lt;svg focusable="false" aria-hidden="true" viewbox="0 0 520 520" part="icon" lwc-3220386utb1="" data-key="add" class="slds-button__icon slds-button__icon_left"&gt;<br/>
+                   &lt;g lwc-3220386utb1=""&gt;<br/>
+                    &lt;path d="M300 290h165c8 0 15-7 15-15v-30c0-8-7-15-15-15H300c-6 0-10-4-10-10V55c0-8-7-15-15-15h-30c-8 0-15 7-15 15v165c0 6-4 10-10 10H55c-8 0-15 7-15 15v30c0 8 7 15 15 15h165c6 0 10 4 10 10v165c0 8 7 15 15 15h30c8 0 15-7 15-15V300c0-6 4-10 10-10z" lwc-3220386utb1=""&gt;&lt;/path&gt;<br/>
+                   &lt;/g&gt;<br/>
+                  &lt;/svg&gt;<br/>
+                 &lt;/lightning-primitive-icon&gt;Agregar&lt;/button&gt;<br/>
+               &lt;/lightning-button&gt;<br/>
+              &lt;/flowruntime-repeater&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/flowruntime-list-container&gt;<br/>
+           &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;&lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;&lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+            &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+            &lt;flowruntime-list-container&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+               &lt;div lwc-6aa2906q6hj="" class="section slds-grid slds-gutters_direct slds-wrap"&gt;<br/>
+                &lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-section-column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"&gt;<br/>
+                 &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                 &lt;flowruntime-list-container&gt;<br/>
+                  &lt;div&gt;<br/>
+                   &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+                    &lt;div lwc-6aa2906q6hj="" class="slds-grid slds-wrap slds-gutters_direct"&gt;&lt;/div&gt;<br/>
+                   &lt;/flowruntime-base-section&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/flowruntime-list-container&gt;<br/>
+                &lt;/flowruntime-screen-field&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/flowruntime-base-section&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/flowruntime-list-container&gt;<br/>
+           &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+            &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+            &lt;flowruntime-list-container&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+               &lt;div lwc-6aa2906q6hj="" class="section slds-grid slds-gutters_direct slds-wrap"&gt;<br/>
+                &lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-section-column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"&gt;<br/>
+                 &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                 &lt;flowruntime-list-container&gt;<br/>
+                  &lt;div&gt;<br/>
+                   &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+                    &lt;div lwc-6aa2906q6hj="" class="slds-grid slds-wrap slds-gutters_direct"&gt;&lt;/div&gt;<br/>
+                   &lt;/flowruntime-base-section&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/flowruntime-list-container&gt;<br/>
+                &lt;/flowruntime-screen-field&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/flowruntime-base-section&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/flowruntime-list-container&gt;<br/>
+           &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+            &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+            &lt;flowruntime-list-container&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+               &lt;div lwc-6aa2906q6hj="" class="section slds-grid slds-gutters_direct slds-wrap"&gt;<br/>
+                &lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-section-column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"&gt;<br/>
+                 &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+                 &lt;flowruntime-list-container&gt;<br/>
+                  &lt;div&gt;<br/>
+                   &lt;flowruntime-base-section lwc-6aa2906q6hj-host=""&gt;<br/>
+                    &lt;div lwc-6aa2906q6hj="" class="slds-grid slds-wrap slds-gutters_direct"&gt;&lt;/div&gt;<br/>
+                   &lt;/flowruntime-base-section&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/flowruntime-list-container&gt;<br/>
+                &lt;/flowruntime-screen-field&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/flowruntime-base-section&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/flowruntime-list-container&gt;<br/>
+           &lt;/flowruntime-screen-field&gt;&lt;flowruntime-screen-field lwc-6aa2906q6hj="" class="flowruntime-column slds-col slds-size_12-of-12 slds-align-top"&gt;<br/>
+            &lt;div data-render-key="1"&gt;&lt;/div&gt;<br/>
+            &lt;flowruntime-lwc-field class="field-element" lwc-3anllt3fi9m-host=""&gt;<br/>
+             &lt;div lwc-3anllt3fi9m="" class="container"&gt;<br/>
+              &lt;c-ml_cancel-button-flow lwc-3anllt3fi9m="" aria-describedby="" lwc-166regham99-host=""&gt;<br/>
+               &lt;div lwc-166regham99="" class="slds-p-top_small"&gt;<br/>
+                &lt;lightning-button lwc-166regham99="" variant="neutral" lwc-40a585din3p-host=""&gt;<br/>
+                 &lt;button lwc-40a585din3p="" class="slds-button slds-button_neutral" aria-disabled="false" type="button" part="button" kx-scope="button-neutral" kx-type="ripple"&gt;Cancelar&lt;/button&gt;<br/>
+                &lt;/lightning-button&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/c-ml_cancel-button-flow&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/flowruntime-lwc-field&gt;<br/>
+           &lt;/flowruntime-screen-field&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/flowruntime-base-section&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/flowruntime-list-container&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/flowruntime-lwc-body&gt;<br/>
+     &lt;flowruntime-navigation-bar lwc-3uma98d0eu4="" class="slds-card__footer navigationBar" lwc-7g95h202aim-host=""&gt;<br/>
+      &lt;footer lwc-7g95h202aim="" class="slds-scope footerContainer slds-grid slds-grid_align-spread slds-grid_vertical-align-center slds-grow"&gt;<br/>
+       &lt;flowruntime-progress-indicator lwc-7g95h202aim="" class="slds-grow"&gt;&lt;/flowruntime-progress-indicator&gt;<br/>
+       &lt;div lwc-7g95h202aim="" class="navigation-bar__right-align"&gt;<br/>
+        &lt;lightning-button lwc-7g95h202aim="" class="flow-button__NEXT flow-action-button" variant="brand" lwc-40a585din3p-host=""&gt;<br/>
+         &lt;button lwc-40a585din3p="" class="slds-button slds-button_brand" aria-disabled="false" type="button" part="button" kx-scope="button-brand" kx-type="ripple"&gt;Siguiente&lt;/button&gt;<br/>
+        &lt;/lightning-button&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/footer&gt;<br/>
+     &lt;/flowruntime-navigation-bar&gt;<br/>
+     &lt;div class="flow-local-action-container" lwc-3uma98d0eu4=""&gt;&lt;/div&gt;<br/>
+     &lt;flowruntime-a11y-announcer lwc-3uma98d0eu4=""&gt;<br/>
+      &lt;div class="slds-assistive-text" aria-relevant="all" aria-live="polite"&gt;&lt;/div&gt;<br/>
+     &lt;/flowruntime-a11y-announcer&gt;<br/>
+    &lt;/flowruntime-flow&gt;&lt;!--render facet: 13:0--&gt;&lt;!--render facet: 14:0--&gt;&lt;!--render facet: 15:0--&gt;<br/>
+   &lt;/article&gt;&lt;!--render facet: 27:0--&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;form id="j_id0:j_id7" name="j_id0:j_id7" method="post" action="https://melilegal--uat--c.sandbox.vf.force.com/flow/runtime.apexp?isdtp=p1&amp;sfdcIFrameOrigin=https://melilegal--uat.sandbox.lightning.force.com" enctype="application/x-www-form-urlencoded"&gt;&lt;input type="hidden" name="j_id0:j_id7" value="j_id0:j_id7"&gt;<br/>
+   &lt;script id="j_id0:j_id7:j_id8" type="text/javascript"&gt;redirectAF=function(url){A4J.AJAX.Submit('j_id0:j_id7',null,{'similarityGroupingId':'j_id0:j_id7:j_id8','parameters':{'j_id0:j_id7:j_id8':'j_id0:j_id7:j_id8','url':(typeof url!='undefined'&&url!=null)?url:''} } )};<br/>
+&lt;/script&gt;<br/>
+   &lt;div id="j_id0:j_id7:j_id11"&gt;&lt;/div&gt;<br/>
+  &lt;/form&gt;&lt;span id="ajax-view-state-page-container" style="display: none"&gt;&lt;span id="ajax-view-state" style="display: none"&gt;&lt;input type="hidden" id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="i:AAAAWXsidCI6IjAwRGR6MDAwMDAzNVRwRiIsInYiOiIwMkdhNTAwMDAwMVJuN0oiLCJhIjoidmZlbmNyeXB0aW9ua2V5IiwidSI6IjAwNWR6MDAwMDA3b1dhSiJ9GcsqYZc/D9+AA8m1OObVAlGzKVIGnwNxSjdR9wAAAZsTm4FJpt2rWP7ir4/ZDMdU0QJ3kJumGepKascDw23p/nhkYmQx6SDRn/Wp37lv2tPQI8+c7wdm05mjxutiEhBwR/U8mvTOTSiu1odypNCNh2viFLE8xoOB0Enia/GydeCT5ioCCIgaS77L0h2zZ7cIjR+y59OhRNHddFJOUutK0f8em1Djm/9h3OVPRZDqWsEF1XFKYxhXgx6QLbFgCjDdRBrmKW/EWMOEH+6sVWwwGaiiT/pQRYpWmQXDPR+HjSdWIMh92sRHMbgP9SUvkr9TAths8Jm56lJcyhNqcPFFow63v+yXtLbSVU3l0CePbIReKmUSmk+qnolIuDt8VWYRXCO72T3e+Sw/EABZZWKeMyMczsfRXAm3OzTQksuLehNCLSCj/WlXmcmx2i2cNsGL/hms9CAzTIDAMNumcd/7k4znHI+cCHczfBKRvTfXxTxz48SaIVRsAXIZkBz+bt1ShJbqGVvlqupSDlAn3qM4hcQN43nMVhg4DkuOT3z/PQtLnXFj7YokW5Jq1I7+fH/Uw6g0zQ38WHvaEeaxKHV7ohCsxNdcdYzblckOtLyDbIPSF2Nba1xzzjA3RkxGXoE46NN7BRwQaxA6IvVNcwAnVsZdVu/IJsbZ3HNde+0H9njXFCc8vCOKAEAh76Fk91Hn2GA8bDdVbiJiySFVfgjvLNDwlItGBtV8Uqp397TrizNNQER98kqjtReU86pT2O1CRV7xXWDiHW21SyxZG0Q0XW7YQdgrBki0wRcRRc/08mZjPruQt8nCnv3Vqy00gp5nX71ySoNC1z8EnPiu6UU5PcGHYjYFD1BhzXOPbAr1pWQY10kjGkXKZd8j39uL8KY78gDsoDbOVqFVYZ/shPHJUUV9NvrU1cn4BQU6DhrTbx5FMSpuz4CLF3l5bGiJxC2XvjI3ZzW1E3XHeaR8ZwBcoro7kZh9xzXkfNkms8qoYOVZRQfGRgn5V0up++HfYmosygjjeNiQkwB7IKpTAzBuOji3P8aqrlom7YwNXnQTQNxhh/+obP5YQkiQgB5XnZV9soUpGLw0sLgs9YBIwGhYTj2jqt+LC4MSyzVmc0DDHtsHcIYnzd/39yg27EPwQzmZKgUcFAPj3orCR4+OJEUjEaFgNAFDaqCU27SGI10nQvKEwWPvzsm4tA9LXFVuzVBreInvzlKBBFUK74ifEZYNfy/+Ko6pB/11HJNysMpOxTCw7W4fnf1MyMAM3lCLfM56TXHEijXG7UouEdvq6qFCpirLLt8+FoATAsXb3F4gi7gZOvqEzFsxbNq+yjDg5vAtxcEryHNqSsNaJ6+kPoV+GT3qtfhbEjN1y9pyHQbVRqQR7r5ISOFJAo/GfBJJLhJkqE0C0JybJfXtw+/m2Wtog/v1u2SfLEwZ5I0WpcYP9qRMTQITbAWvm3S/bo/hQr1+jQvYBYyDxkDEIv3ipryhmdWnqYIctZmBswaGanfN/u3R9BSnWj3pIzmy29g0Ms+BkZABAFy9OxUjprSmunkW/gpz6fWAksU3gzwxA417RHDA6Z27xc2BcFSZ+1ECye4yxex77RGBPIBfPCiyxtEK5BWo7yetk64MSLnkOyoqKQ6cHctJcv/KLapxZhFaczRRnLcgdrK0w41zO3flhzI07cj9bS6sTXNCqfTGCxyGxaHK7PnDdFB6rI0m1Hhcufdh1rB5iE+bCcrWdII7tBqkZB8d22Bj/vWK/huy3GX6hzmLK3NqRSxtL8ZdNA+U8Q/tPQ++70Dw987ST+ZAEm57TStxuRCEzLty1jFzNX8dhhmsnMi5x+4NsGm2KItB5mk+tmjm/JMNd7I9JEVZIDbdGf66p3FpJQBwzwoTgVXEzSKJ0k0NolmsxF57SFlTSKfNoZFPPW8ubr4+6GkVEI5Fu2hEWJ5KbmN/FxW9FqU08M7t8FhnKkmJbNy3UYI4sLwSrUfuRORSQnQcnLo5jnW9noZi4UTd88eLWRjSH3wNxjLthVOk6HW5CdAFBPTqZq9hIPT14fQOZ37D1KGEELEcGNyjbd/pA2g9AXOc7tK5XGLT+qA3CB2Z7SXoTShjWYrkOCIXS2wkv6L+55N628HFNpuXRGy7Xqf30wxnRHbtC/ciiB5iqQUWAQi36Q0Y2QoIKlYaV83BSfMzObe76lNF2JONfqjchfwDF6Tssmjo4ySht3wTLHrBBANrupLU56IKQaasCKwxJlF+cjq9zT9U6VKrHvjBE/47IvVAS+ovCn5sqqNSPTWrgddWEMwHWEKIJVay5X/ac4NIxfvw9hSBP1JTcRXTkZ31kTy2Vv4X+FvGYuSuM0zQAd3ReFbUevtx41GdCc02It6nXemRD+IE/+wZFJhJqpwEZG2Xebwish4sdk4hQvIkBkH9SRDFIvgeDY6MHGS3O8GXc/u5LyQnol7Q0D1NJYGp1Qh61IgLYjp7AhzDwRYBF3CjbDgMK7aRZSDG36clV1SIZU69umYzdH2TM2VWhsWUvtrMEXnXnE2qbuzPZyJVL1KbIA8oJmVEBObM6vp4EO8nDRFKWOG0XWrKd6iDFlyhpO6cLmIR8CLq87sBuc9dfd1ncSo8ErGpS+ykkXmpP2/gK0d1Cyd/F7cV5DzYoeUMsFOYY6KzHtkwdfEFZjTC4IyYyqlIHp241bgio8puiGN60NRyOsqa1rQSZZ0NJKcN7+HpbSDHItuCEvEMK7nYQWubacTT4UrZsEKivpN3xNtpskntBEe3EglRKFd7LAs6ql5QD9ZIl83bYfjlgJUIX2eeRGf+nAHvrqTntp/DlVx1gcp0zCpG8cuYU+Wp1Sk2R0vDwoEwT8G1dFJpNbF/j9GIus0dA7S6BOQxsqn2Ba+0iSW6FOgGsG65lNdR+Pq1diurhvHc7Nrk7WF7btncA+y5uzve+0EFgI6bG0BfGXG6oF3mD1oYGtni6TSb38Jf2HAf6e3xhfJWT4F8gHhUsFMudwc3zf+L95aHmccpWalalqWHyq9It+5qjFqxDvkY2zLGm1Cweyn0LccN574cQhXBxqE7LMtd8FfgKWtMGcK8ZRiIjZm1Iz9dUHsoKvqSaPZtDkwI3kDqEN5BojlW6UoWkZ1w9TGEVfJab1m8BWxCFoQBDFWygNfqw190Cc8qKc5ShPG2ZkoYzc3S2ftZE5BxDOMDhn50B+hR2ZZRP+yYuT+S05BTY/72zGBZ+VV7ZkfxOiqtdTyYFyEvip5X8SgtxwKl+sm7Ytkf20aNuNinuP2/JoWSwcz5M+kp1jLJx9VVv/LPBwdjyNexb+kJFMbFnQxB0jsPrYoYgNeUsb6t"&gt;&lt;input type="hidden" id="com.salesforce.visualforce.ViewStateVersion" name="com.salesforce.visualforce.ViewStateVersion" value="202512111758080000"&gt;&lt;input type="hidden" id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="AGV5SnViMjVqWlNJNkluSjZSVFZQYTJ0d2QwTkVMV0pLTFZOalZqQTVORFpRZEdrNGVYTXhXR05CVWxaSlRXODRWM0pGYWpoY2RUQXdNMlFpTENKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUlzSW10cFpDSTZJbnRjSW5SY0lqcGNJakF3UkdSNk1EQXdNREF6TlZSd1Jsd2lMRndpZGx3aU9sd2lNREpIWVRVd01EQXdNREZTYmpkS1hDSXNYQ0poWENJNlhDSjJabk5wWjI1cGJtZHJaWGxjSWl4Y0luVmNJanBjSWpBd05XUjZNREF3TURBM2IxZGhTbHdpZlNJc0ltTnlhWFFpT2xzaWFXRjBJbDBzSW1saGRDSTZNVGMyTlRVMk1EVXhOamt6Tnl3aVpYaHdJam93ZlE9PS4uRUx5Y0ptNkY5SjhiMl9wVzJXV0tYYVYtSTd4ekVVWnc5eFZjOHlzQWNLND0="&gt;&lt;input type="hidden" id="com.salesforce.visualforce.ViewStateCSRF" name="com.salesforce.visualforce.ViewStateCSRF" value="VmpFPSxNakF5TlMweE1pMHhOVlF4TnpveU9Eb3pOaTQ1TXpkYSxWOVFMSmo5YWc4ZHMweU1YcWpoTGhCR3BnOElvdUljcFlNb1E2ODc0OVJFPSxOMkZoWlRrMw=="&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+  &lt;script&gt;<br/>
+<br/>
+                var flowName = "ML_CreateCase" === "" ? null : "ML_CreateCase";<br/>
+                var versionId = "" === "" ? null : "";<br/>
+                var layout = "" === "" ? null : "";<br/>
+                var interviewId = "" === "" ? null : "";<br/>
+                var args = "" === "" ? null : "";<br/>
+                var debugInputs = "" === "" ? null : "";<br/>
+                var url = "" === "" ? null : "";<br/>
+<br/>
+                var redirect = function(event) {<br/>
+                    var isOrchestrationInProgress = event.getParam("orchestrationStatus") != null && event.getParam("orchestrationStatus").indexOf("InProgress") !== -1;<br/>
+                    if(event.getParam("status").indexOf("FINISHED") !== -1 || isOrchestrationInProgress) {<br/>
+                        if(url !== null) {<br/>
+                            redirectAF(url);<br/>
+                            return false;<br/>
+                        }<br/>
+                    }<br/>
+                };<br/>
+<br/>
+                if (!debugInputs) {<br/>
+                    // standard runtime<br/>
+                    $Lightning.use("flowruntime:flowLightningOut", function() {<br/>
+                     $Lightning.createComponent("flowruntime:runtime",<br/>
+                         {<br/>
+                             flowDevName : flowName,<br/>
+                             flowVersionId : versionId,<br/>
+                             flowLayout: layout,<br/>
+                             arguments: args,<br/>
+                             pausedInterviewId : interviewId,<br/>
+                             flowStatus : redirect,<br/>
+                                flowHasRedirect: url !== null,<br/>
+                             environment: "standalone"<br/>
+                         },<br/>
+                         "flowContainer",<br/>
+                         function(cmp) {}<br/>
+                     );<br/>
+                  });<br/>
+                } else {<br/>
+                    // debugger<br/>
+                    $Lightning.use("flowruntime:flowDebugLightningOut", function() {<br/>
+                     $Lightning.createComponent("flowruntime:debug",<br/>
+                         {<br/>
+                             flowDevName : flowName,<br/>
+                             flowVersionId : versionId,<br/>
+                             flowLayout: layout,<br/>
+                             pausedInterviewId : interviewId,<br/>
+                             inputs: debugInputs,<br/>
+                             flowStatus : redirect,<br/>
+                             environment: "debug"<br/>
+                         },<br/>
+                         "flowContainer",<br/>
+                         function(cmp) {}<br/>
+                     );<br/>
+                  });<br/>
+                }<br/>
+            &lt;/script&gt;&lt;span id="j_id0:j_id12"&gt;&lt;/span&gt;<br/>
+  &lt;script type="text/javascript"&gt;Sfdc.onReady(function(){<br/>
+	SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:j_id7"]);<br/>
+<br/>
+});&lt;/script&gt;<br/>
+  &lt;script&gt;if (this.SfdcApp && this.SfdcApp.projectOneNavigator && document.title) { SfdcApp.projectOneNavigator.sendTitleToParent(document.title); } &lt;/script&gt;<br/>
+  &lt;div id="auraErrorMessage"&gt;&lt;/div&gt;&lt;!--render facet: 4:0--&gt;&lt;iframe style="display: none;"&gt;&lt;/iframe&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
