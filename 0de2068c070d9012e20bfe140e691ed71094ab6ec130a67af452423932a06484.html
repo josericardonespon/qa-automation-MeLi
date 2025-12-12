@@ -229,7 +229,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 12-12-2025 01:14:06</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 12-12-2025 02:19:06</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -244,7 +244,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    21 tests
+                                    24 tests
 
                                      |
                                         <a href="0de2068c070d9012e20bfe140e691ed71094ab6ec130a67af452423932a06484.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
@@ -323,27 +323,27 @@
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>21</td>
+                    <td>24</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Dec 12, 2025 00:56:45</td>
+                    <td>Dec 12, 2025 02:04:17</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Dec 12, 2025 01:14:01</td>
+                    <td>Dec 12, 2025 02:19:03</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 17m 15s</td>
+                    <td> 14m 45s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -356,21 +356,21 @@
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td> 17m 15s</td>
+                    <td> 14m 44s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td> 3m 37s</td>
+                    <td> 3m 41s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 17m 15s</td>
+                    <td> 14m 45s</td>
                 </tr>
                 </tbody>
             </table>
@@ -418,22 +418,6 @@ User esperar interaction
 user clicks on Quick search input
 user enters 'BPO Operaciones' into Quick search input
 user clicks on Quick search input
-Cuando el rol "BPO Operaciones" ha creado un caso correctamente en MeLi
-Y el usuario crea un nuevo evento de tipo "Acuerdo"
-Entonces el evento de tipo "Acuerdo" se crea exitosamente
-2: Flujo E2E exitoso para caso con rol BPO Operaciones y evento Audiencia ({rol=BPO Operaciones, tipoEvento=Audiencia})
-Dado que el rol "BPO Operaciones" ha iniciado sesión en MeLi
-user Login con credenciales validas
-user opens the browser at https://test.salesforce.com/
-user enters 'erp_legales@mercadolibre.com.melilegal.uat' into input user
-user enters 'Miercoles.0511' into input user
-user clicks on button login salesforce
-user cambia el usuario al rol BPO Operaciones mediante Login-As
-user opens the browser at https://melilegal--uat.sandbox.my.salesforce-setup.com/lightning/setup/SetupOneHome/home
-User esperar interaction
-user clicks on Quick search input
-user enters 'BPO Operaciones' into Quick search input
-user clicks on Quick search input
 user clicks on button login
 Cuando el rol "BPO Operaciones" ha creado un caso correctamente en MeLi
 user abre la sección de Casos en MeLi
@@ -447,7 +431,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '75836' into Campo Número Expediente
+user enters '30954' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -527,21 +511,39 @@ user clicks on button Siguiente
 user ingresa al caso creado en MeLi
 User esperar interaction
 user clicks on Link Ir al caso
-Y el usuario crea un nuevo evento de tipo "Audiencia"
+Y el usuario crea un nuevo evento de tipo "Acuerdo"
 User gestionar eventos task
 User crear eventos task
 user clicks on button new event
-user clicks on radio audiencia
+user clicks on radio acuerdo
 user clicks on button Siguiente
 User escribir fecha interaction
+user clicks on COMBO result agreement
+user clicks on option paga legales
 user clicks on button Siguiente
 Upload file at /home/runner/work/qa-automation-MeLi/qa-automation-MeLi/src/test/resources/files/PRUEBA.txt to input file
 user clicks on Botón de archivo listo
 User esperar interaction
 user clicks on button GUARDAR
-Entonces el evento de tipo "Audiencia" se crea exitosamente
+Entonces el evento de tipo "Acuerdo" se crea exitosamente
 User verificar eventos creados task
-user clicks on link Audiencia created
+user clicks on link Acuerdo createdo
+2: Flujo E2E exitoso para caso con rol BPO Operaciones y evento Audiencia ({rol=BPO Operaciones, tipoEvento=Audiencia})
+Dado que el rol "BPO Operaciones" ha iniciado sesión en MeLi
+user Login con credenciales validas
+user opens the browser at https://test.salesforce.com/
+user enters 'erp_legales@mercadolibre.com.melilegal.uat' into input user
+user enters 'Miercoles.0511' into input user
+user clicks on button login salesforce
+user cambia el usuario al rol BPO Operaciones mediante Login-As
+user opens the browser at https://melilegal--uat.sandbox.my.salesforce-setup.com/lightning/setup/SetupOneHome/home
+User esperar interaction
+user clicks on Quick search input
+user enters 'BPO Operaciones' into Quick search input
+user clicks on Quick search input
+Cuando el rol "BPO Operaciones" ha creado un caso correctamente en MeLi
+Y el usuario crea un nuevo evento de tipo "Audiencia"
+Entonces el evento de tipo "Audiencia" se crea exitosamente
 3: Flujo E2E exitoso para caso con rol BPO Operaciones y evento Decisión ({rol=BPO Operaciones, tipoEvento=Decisión})
 Dado que el rol "BPO Operaciones" ha iniciado sesión en MeLi
 user Login con credenciales validas
@@ -568,7 +570,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '76268' into Campo Número Expediente
+user enters '32806' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -691,7 +693,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '17558' into Campo Número Expediente
+user enters '74023' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -813,7 +815,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '85836' into Campo Número Expediente
+user enters '41102' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -937,7 +939,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '90364' into Campo Número Expediente
+user enters '44699' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -1060,7 +1062,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '20494' into Campo Número Expediente
+user enters '78944' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -1183,7 +1185,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '92818' into Campo Número Expediente
+user enters '45198' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -1304,7 +1306,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '99292' into Campo Número Expediente
+user enters '51084' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -1427,7 +1429,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '19717' into Campo Número Expediente
+user enters '80392' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -1469,60 +1471,9 @@ user enters '38101300' into Campo número de documento otra parte contraria
 user clicks on Campo número de documento otra parte contraria
 user clicks on button Siguiente
 User esperar interaction
-user clicks on Combo Caso relacionado
-user clicks on Opcion caso relacionado
-user clicks on button Siguiente
-User esperar interaction
-user clicks on Combobox Área de Derecho
-user clicks on Opción Civil del combobox Área de Derecho
-user clicks on Combobox de Subárea de derecho
-user clicks on Opción Judicial del combo Subárea de derecho
-user clicks on Combobox Tipo de acción
-user clicks on Opción Ejecución fiscal del combobox Tipo de acción
-user clicks on Combobox Tipo de procedimiento
-user clicks on Opción Ordinario del Tipo de Procedimiento
-user clicks on Combo Unidad de negocio
-user clicks on Opción Marketplace dentro del combo Área de negocio
-user clicks on Combo objeto
-user clicks on Opción Datos personales
-user clicks on Combo Causa
-user clicks on Opción Causa
-user clicks on Combo Objeto y Causa
-user clicks on Opción Objeto y Causa
-user clicks on Combobox Rubro
-user clicks on Opción Rubro Daño material
-user clears field Campo Valor inicial
-user enters '100000' into Campo Valor inicial
-user clicks on Combobox Empresa relacionada al Rubro
-user clicks on Opción empresa en combobox Rubro
-user clicks on Combobox Valor reclamado igual al valor de la causa
-user clicks on Opción Sí del combo Valor reclamado igual al valor de la causa
-user clicks on button Siguiente
-User esperar interaction
-Upload file at /home/runner/work/qa-automation-MeLi/qa-automation-MeLi/src/test/resources/files/PRUEBA.txt to input file
-User esperar interaction
-user clicks on Botón de archivo listo
-User esperar interaction
-user clicks on button Siguiente
-user ingresa al caso creado en MeLi
-User esperar interaction
-user clicks on Link Ir al caso
+Cuando el rol "Legal Ops Operaciones" ha creado un caso correctamente en MeLi
 Y el usuario crea un nuevo evento de tipo "Multa"
-User gestionar eventos task
-User crear eventos task
-user clicks on button new event
-user clicks on radio multa
-user clicks on button Siguiente
-User escribir fecha interaction
-user enters '1000' into Monto Multa
-user clicks on button Siguiente
-Upload file at /home/runner/work/qa-automation-MeLi/qa-automation-MeLi/src/test/resources/files/PRUEBA.txt to input file
-user clicks on Botón de archivo listo
-User esperar interaction
-user clicks on button GUARDAR
 Entonces el evento de tipo "Multa" se crea exitosamente
-User verificar eventos creados task
-user clicks on link Multa created
 11: Flujo E2E exitoso para caso con rol Legal Ops Operaciones y evento Pericia ({rol=Legal Ops Operaciones, tipoEvento=Pericia})
 Dado que el rol "Legal Ops Operaciones" ha iniciado sesión en MeLi
 user Login con credenciales validas
@@ -1549,7 +1500,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '97105' into Campo Número Expediente
+user enters '51358' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -1673,7 +1624,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '02460' into Campo Número Expediente
+user enters '53251' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -1796,7 +1747,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '19860' into Campo Número Expediente
+user enters '73684' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -1919,7 +1870,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '96453' into Campo Número Expediente
+user enters '93401' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -2040,7 +1991,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '97227' into Campo Número Expediente
+user enters '91458' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -2150,115 +2101,9 @@ User esperar interaction
 user clicks on Quick search input
 user enters 'Admin Meli' into Quick search input
 user clicks on Quick search input
-user clicks on button login
 Cuando el rol "Admin Meli" ha creado un caso correctamente en MeLi
-user abre la sección de Casos en MeLi
-user clicks on tag cases
-user selecciona la vista de Demandas en la lista de Casos
-User esperar interaction
-user clicks on combo cases
-user clicks on demand cases
-user Crear caso principal en MeLi
-User esperar interaction
-user clicks on Botón Nuevo caso
-user clicks on Combo Tipo de documento
-user clicks on Opción Demanda del Tipo de Documento
-user enters '92593' into Campo Número Expediente
-user enters 'Cierre Sucursal' into Campo Caratula
-User escribir fecha interaction
-User escribir fecha interaction
-User escribir fecha interaction
-User escribir fecha interaction
-user clicks on Combobox de País
-user clicks on Combo país con Argentina seleccionada
-user clicks on Combobox Seleccioná un estado
-user clicks on Opción Buenos Aires del combobox Estado
-user enters 'San Fernando' into Campo Ingresá el municipio
-user clicks on Opción San Fernando
-user enters 'Victoria' into Campo Ingresá la ciudad
-user clicks on Opción Victoria
-user clicks on Combobox de Justicia
-user clicks on Opción Administrativa del combobox Justicia
-user enters 'Municipalidad de Rio Cuarto' into Campo Ingresá la autoridad
-user clicks on Opción Municipalidad de Rio Cuarto
-user enters 'Mercado Pago Asset Management S.A.' into Campo Buscar empresa
-User esperar interaction
-user clicks on Opción Mercado Pago
-user clicks on Combo Rol de la empresa
-user clicks on Opción Demandante del Rol
-user clicks on button Siguiente
-User esperar interaction
-user clicks on Combo Tipo de documento de partes contrarias
-user clicks on Opción DNI del combobox
-user enters '38414814' into Campo número de documento
-user clicks on Primer resultado del lookup
-user clicks on Combo Tiene Abogado
-user clicks on Opción Sí en Tiene Abogado
-user enters 'ANGELES, PEDRO' into Campo Nombre del Abogado
-user enters '312312TES' into Campo Matrícula del Abogado
-user enters 'NUS' into Campo Estudio Jurídico del Abogado
-user clicks on Combo Tiene Otras Partes
-user clicks on Opción Sí en Tiene Otras Partes
-user clicks on Segunda Combobox Tipo de Documento parte contraria
-user clicks on Opción DNI del segundo combo 'Tipo de documento'
-user enters '38101300' into Campo número de documento otra parte contraria
-user clicks on Campo número de documento otra parte contraria
-user clicks on button Siguiente
-User esperar interaction
-user clicks on Combo Caso relacionado
-user clicks on Opcion caso relacionado
-user clicks on button Siguiente
-User esperar interaction
-user clicks on Combobox Área de Derecho
-user clicks on Opción Civil del combobox Área de Derecho
-user clicks on Combobox de Subárea de derecho
-user clicks on Opción Judicial del combo Subárea de derecho
-user clicks on Combobox Tipo de acción
-user clicks on Opción Ejecución fiscal del combobox Tipo de acción
-user clicks on Combobox Tipo de procedimiento
-user clicks on Opción Ordinario del Tipo de Procedimiento
-user clicks on Combo Unidad de negocio
-user clicks on Opción Marketplace dentro del combo Área de negocio
-user clicks on Combo objeto
-user clicks on Opción Datos personales
-user clicks on Combo Causa
-user clicks on Opción Causa
-user clicks on Combo Objeto y Causa
-user clicks on Opción Objeto y Causa
-user clicks on Combobox Rubro
-user clicks on Opción Rubro Daño material
-user clears field Campo Valor inicial
-user enters '100000' into Campo Valor inicial
-user clicks on Combobox Empresa relacionada al Rubro
-user clicks on Opción empresa en combobox Rubro
-user clicks on Combobox Valor reclamado igual al valor de la causa
-user clicks on Opción Sí del combo Valor reclamado igual al valor de la causa
-user clicks on button Siguiente
-User esperar interaction
-Upload file at /home/runner/work/qa-automation-MeLi/qa-automation-MeLi/src/test/resources/files/PRUEBA.txt to input file
-User esperar interaction
-user clicks on Botón de archivo listo
-User esperar interaction
-user clicks on button Siguiente
-user ingresa al caso creado en MeLi
-User esperar interaction
-user clicks on Link Ir al caso
 Y el usuario crea un nuevo evento de tipo "Multa"
-User gestionar eventos task
-User crear eventos task
-user clicks on button new event
-user clicks on radio multa
-user clicks on button Siguiente
-User escribir fecha interaction
-user enters '1000' into Monto Multa
-user clicks on button Siguiente
-Upload file at /home/runner/work/qa-automation-MeLi/qa-automation-MeLi/src/test/resources/files/PRUEBA.txt to input file
-user clicks on Botón de archivo listo
-User esperar interaction
-user clicks on button GUARDAR
 Entonces el evento de tipo "Multa" se crea exitosamente
-User verificar eventos creados task
-user clicks on link Multa created
 17: Flujo E2E exitoso para caso con rol Admin Meli y evento Pericia ({rol=Admin Meli, tipoEvento=Pericia})
 Dado que el rol "Admin Meli" ha iniciado sesión en MeLi
 user Login con credenciales validas
@@ -2285,7 +2130,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '84637' into Campo Número Expediente
+user enters '43881' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -2409,7 +2254,7 @@ User esperar interaction
 user clicks on Botón Nuevo caso
 user clicks on Combo Tipo de documento
 user clicks on Opción Demanda del Tipo de Documento
-user enters '73691' into Campo Número Expediente
+user enters '29410' into Campo Número Expediente
 user enters 'Cierre Sucursal' into Campo Caratula
 User escribir fecha interaction
 User escribir fecha interaction
@@ -2507,8 +2352,8 @@ Entonces el evento de tipo "Recurso" se crea exitosamente
 User verificar eventos creados task
 user clicks on link recurso created
 </td>
-                                                                                    <td>21</td>
-                                                                                    <td>81%</td>
+                                                                                    <td>24</td>
+                                                                                    <td>62%</td>
                                                                                     <td>
                                                                                             <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
                                                                                     </td>
@@ -2516,25 +2361,41 @@ user clicks on link recurso created
                                                                                         <div class="progress">
                                                                                                 <div class="progress-bar"
                                                                                                      role="progressbar"
-                                                                                                     style="width: 80.952381%; background-color: #b0cf73"
-                                                                                                     aria-valuenow="17"
-                                                                                                     title="81% success"
+                                                                                                     style="width: 62.5%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="15"
+                                                                                                     title="63% success"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
                                                                                                 </div>
                                                                                                 <div class="progress-bar"
                                                                                                      role="progressbar"
-                                                                                                     style="width: 14.285714%; background-color: #e3c281"
+                                                                                                     style="width: 8.333333%; background-color: #a8a8a8"
+                                                                                                     aria-valuenow="2"
+                                                                                                     title="8% ignored"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 12.5%; background-color: #e3c281"
                                                                                                      aria-valuenow="3"
-                                                                                                     title="14% skipped"
+                                                                                                     title="13% skipped"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
                                                                                                 </div>
                                                                                                 <div class="progress-bar"
                                                                                                      role="progressbar"
-                                                                                                     style="width: 4.761905%; background-color: #fe6c2d"
-                                                                                                     aria-valuenow="1"
-                                                                                                     title="5% error"
+                                                                                                     style="width: 8.333333%; background-color: #fd938e"
+                                                                                                     aria-valuenow="2"
+                                                                                                     title="8% failure"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 8.333333%; background-color: #fe6c2d"
+                                                                                                     aria-valuenow="2"
+                                                                                                     title="8% error"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
                                                                                                 </div>
@@ -2556,6 +2417,14 @@ user clicks on link recurso created
                                                             <h4>Most Frequent Failures</h4>
                                                             <table class="table" style="width:40vw;">
                                                                 <tbody>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="a0ace456df350117335ad374e8d62c0d8c978db868ea1469e0c5ba32aac965ea.html"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> Assertion error</a>
+                                                                        </td>
+                                                                        <td><span
+                                                                                    class="badge failure-badge">1</span>
+                                                                        </td>
+                                                                    </tr>
                                                                 </tbody>
                                                             </table>
                                                         </div>
@@ -2585,7 +2454,7 @@ user clicks on link recurso created
                             <div>
                                     <a href="0de2068c070d9012e20bfe140e691ed71094ab6ec130a67af452423932a06484.html">
                                     <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Flujos Completos Con Eventos&nbsp;&nbsp;&nbsp;21
+                                        <i class="bi bi-tag-fill"></i> Flujos Completos Con Eventos&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                             </div>
@@ -2597,7 +2466,7 @@ user clicks on link recurso created
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;21
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                             </div>
@@ -2625,13 +2494,13 @@ user clicks on link recurso created
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 17m 15s</td>
+                    <td> 14m 45s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>21</td>
+                    <td>24</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
@@ -2646,30 +2515,30 @@ user clicks on link recurso created
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td> 17m 15s</td>
+                    <td> 14m 44s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Dec 12, 2025 00:56:45</td>
+                    <td>Dec 12, 2025 02:04:17</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td> 3m 37s</td>
+                    <td> 3m 41s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Dec 12, 2025 01:14:01</td>
+                    <td>Dec 12, 2025 02:19:03</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 17m 15s</td>
+                    <td> 14m 45s</td>
                 </tr>
                 </tbody>
             </table>
@@ -2701,11 +2570,15 @@ user clicks on link recurso created
                                                                                title="Data Driven Scenario"> <a
                                                                                         href="a40969a7e61ee66280603bf28375124f944e871e683abcf6effa59fa4013df8a.html">Flujo E2E exitoso para caso con rol <rol> y evento <tipoEvento></a>
                                                                                 <br/>
-                                                                                    <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 17 passing test cases
+                                                                                    <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 15 passing test cases
+                                                                                    <br/>
+                                                                                    <a href='##beforetable'><i class='bi bi-slash-circle ignored-icon ' title='IGNORED'></i></a> 2 ignored test cases
                                                                                     <br/>
                                                                                     <a href='##beforetable'><i class='bi bi-skip-forward skipped-icon ' title='SKIPPED'></i></a> 3 skipped test cases
                                                                                     <br/>
-                                                                                    <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> 1 broken test case
+                                                                                    <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> 2 failing test cases
+                                                                                    <br/>
+                                                                                    <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> 2 broken test cases
                                                                                     <br/>
                                                                         </td>
                                                                         <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
@@ -2716,8 +2589,8 @@ Cuando el rol "<rol>" ha creado un caso correctamente en MeLi
 Y el usuario crea un nuevo evento de tipo "<tipoEvento>"
 Entonces el evento de tipo "<tipoEvento>" se crea exitosamente
 </td>
-                                                                        <td data-order="1765501005">00:56:45</td>
-                                                                        <td>17m 15s</td>
+                                                                        <td data-order="1765505057">02:04:17</td>
+                                                                        <td>14m 46s</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
                                                                                     style="display:none">ERROR</span>
                                                                         </td>
@@ -2746,7 +2619,7 @@ Entonces el evento de tipo "<tipoEvento>" se crea exitosamente
                             <div>
                                     <a href="0de2068c070d9012e20bfe140e691ed71094ab6ec130a67af452423932a06484.html">
                                     <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Flujos Completos Con Eventos&nbsp;&nbsp;&nbsp;21
+                                        <i class="bi bi-tag-fill"></i> Flujos Completos Con Eventos&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                             </div>
@@ -2758,7 +2631,7 @@ Entonces el evento de tipo "<tipoEvento>" se crea exitosamente
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;21
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;24
                                     </span>
                                     </a>
                             </div>
@@ -2812,7 +2685,7 @@ Entonces el evento de tipo "<tipoEvento>" se crea exitosamente
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [17,0,0,3,0,0,1,0],
+                data: [15,0,2,3,0,2,2,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -2863,7 +2736,7 @@ Entonces el evento de tipo "<tipoEvento>" se crea exitosamente
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "81%"
+                        var text = "63%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -2908,7 +2781,7 @@ Entonces el evento de tipo "<tipoEvento>" se crea exitosamente
             datasets: [
                 {
                     label: 'Automated',
-                    data: [17,0,0,3,0,0,1,0],
+                    data: [15,0,2,3,0,2,2,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -2991,7 +2864,7 @@ Entonces el evento de tipo "<tipoEvento>" se crea exitosamente
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['3','0','0','0','0','17','0','1'],
+                data: ['4','0','0','0','0','17','2','1'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -3066,7 +2939,7 @@ Entonces el evento de tipo "<tipoEvento>" se crea exitosamente
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [17],
+                    data: [15],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {
@@ -3076,7 +2949,7 @@ Entonces el evento de tipo "<tipoEvento>" se crea exitosamente
                 },
                 {
                     label: ['Ignored Tests'],
-                    data: [0],
+                    data: [2],
                     backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
                 },
                 {
@@ -3091,12 +2964,12 @@ Entonces el evento de tipo "<tipoEvento>" se crea exitosamente
                 },
                 {
                     label: ['Failed Tests'],
-                    data: [0],
+                    data: [2],
                     backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
                 },
                 {
                     label: ['Errors'],
-                    data: [1],
+                    data: [2],
                     backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
                 },
                 {
