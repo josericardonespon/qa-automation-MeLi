@@ -106,7 +106,7 @@ public class CasoPage {
             .located(By.xpath("//option[normalize-space(text())='Demandante' and not(ancestor::button)]"));
 
     public static final Target COMBO_TIPO_DOCUMENTO_PARTES_CONTRARIAS = Target.the("Combo Tipo de documento de partes contrarias")
-            .located(By.xpath("//span[@class='slds-truncate' and normalize-space()='Seleccione una opción']"));
+            .located(By.xpath("(//span[@class='slds-truncate' and normalize-space()='Seleccione una opción'])[1]"));
 
     public static final Target OPTION_TIPO_IDENTIFICACION_DNI = Target.the("Opción DNI del combobox")
             .located(By.xpath("//span[@title='DNI' and normalize-space()='DNI' and not(ancestor::button)]"));
