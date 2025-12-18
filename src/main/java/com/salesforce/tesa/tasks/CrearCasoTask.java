@@ -13,6 +13,9 @@ import net.serenitybdd.screenplay.actions.Switch;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.waits.WaitOnQuestion;
 import net.serenitybdd.screenplay.waits.WaitUntil;
+import java.util.Random;
+
+import java.time.Duration;
 
 import static com.salesforce.tesa.userintefaces.InicioSesionPage.IFRAME_LOGIN_AS;
 import static com.salesforce.tesa.userintefaces.salesforce.AcuerdosPage.INPUT_FILE;
@@ -49,7 +52,9 @@ public class CrearCasoTask {
     public static class CrearCasos implements Task {
         private final Users users = new Users();
         private final String rutaArchivo = CargarArchivoUtil.obtenerRutaArchivo("PRUEBA.txt");
-        String numeroExpediente = String.valueOf(System.currentTimeMillis()).substring(8);
+        //String numeroExpediente = String.valueOf(System.currentTimeMillis()).substring(8);
+        Random rand = new Random();
+        String numeroExpediente = String.format("%08d", rand.nextInt(100000000));
         @Override
         @Step("{0} Crear caso principal en MeLi")
         public <T extends Actor> void performAs(T actor) {
@@ -174,13 +179,16 @@ public class CrearCasoTask {
                             HacerClickInteraction.on(OPCION_JUSTICIA_ADMINISTRATIVA).withOptions(30,true),
                             InsertarInteraction.theValue("Municipalidad de Rio Cuarto").into(INPUT_AUTORIDAD).withOptions(30,true),
                             HacerClickInteraction.on(OPCION_AUTORIDAD_RIO_CUARTO).withOptions(30, true),
+                            EsperarInteraction.por(1000),
                             InsertarInteraction.theValue(EMPRESA).into(INPUT_BUSCAR_EMPRESA).withOptions(30,true),
+                            EsperarInteraction.por(1000),
                             HacerClickInteraction.on(COMBO_ROL_EMPRESA).withOptions(30, true),
                             HacerClickInteraction.on(OPCION_ROL).withOptions(30, false),
                             HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
                             EsperarInteraction.por(4000),
-                            WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(40)),
-                            HacerClickInteraction.on(COMBO_TIPO_DOCUMENTO_PARTES_CONTRARIAS).withOptions(30, true),
+                            WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(60)),
+                            WaitUntil.the(COMBO_TIPO_DOCUMENTO_PARTES_CONTRARIAS,isEnabled()).forNoMoreThan(Duration.ofSeconds(30)),
+                            HacerClickInteraction.on(COMBO_TIPO_DOCUMENTO_PARTES_CONTRARIAS).withOptions(30, false),
                             HacerClickInteraction.on(OPTION_TIPO_IDENTIFICACION_DNI).withOptions(30, true),
                             InsertarInteraction.theValue("38414814").into(INPUT_NUMERO_DOCUMENTO_PARTE_CONTRARIA).withOptions(30, true),
                             HacerClickInteraction.on(OPCION_DOCUMENTO_PTE_CONT).withOptions(30, true),
