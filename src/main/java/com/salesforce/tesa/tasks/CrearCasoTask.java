@@ -10,6 +10,7 @@ import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Switch;
+import net.serenitybdd.screenplay.conditions.Check;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.waits.WaitOnQuestion;
 import net.serenitybdd.screenplay.waits.WaitUntil;
@@ -185,8 +186,8 @@ public class CrearCasoTask {
                             HacerClickInteraction.on(COMBO_ROL_EMPRESA).withOptions(30, true),
                             HacerClickInteraction.on(OPCION_ROL).withOptions(30, false),
                             HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, false),
-                            EsperarInteraction.por(4000),
-                            WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(60)),
+                            EsperarInteraction.por(8000),
+                            //WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(60)),
                             WaitUntil.the(COMBO_TIPO_DOCUMENTO_PARTES_CONTRARIAS,isEnabled()).forNoMoreThan(Duration.ofSeconds(30)),
                             HacerClickInteraction.on(COMBO_TIPO_DOCUMENTO_PARTES_CONTRARIAS).withOptions(30, false),
                             HacerClickInteraction.on(OPTION_TIPO_IDENTIFICACION_DNI).withOptions(30, true),
@@ -212,9 +213,9 @@ public class CrearCasoTask {
                              */
                             HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, true),
                             EsperarInteraction.por(4000),
-                            WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
-                            HacerClickInteraction.on(COMBO_CASO_RELACIONADO).withOptions(30, false),
-                            HacerClickInteraction.on(OPCION_CASO_RELACIONADO).withOptions(30, false),
+                            //WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
+                            //HacerClickInteraction.on(COMBO_CASO_RELACIONADO).withOptions(30, false),
+                            //HacerClickInteraction.on(OPCION_CASO_RELACIONADO).withOptions(30, false),
                             HacerClickInteraction.on(BUTTON_SIGUIENTE).withOptions(30, true),
                             EsperarInteraction.por(2000),
                             //WaitUntil.the(SPINNER, isNotPresent()).forNoMoreThan(java.time.Duration.ofSeconds(30)),
