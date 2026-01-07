@@ -20,6 +20,9 @@ public class InicioSesionPage {
             .located(By.xpath("(//input[@title='Login'])[1]"));
     public static final Target BARRA_CERRAR_SESION = Target.the("barra cerrar sesion")
             .located(By.xpath("//*[@id=\"oneHeader\"]/div[1]/div"));
+    public static final Target BTN_CERRAR_SESION = Target.the("Boton cerrar sesión")
+            .located(By.xpath("//a[contains(normalize-space(), 'Cerrar sesión')]"));
+
 
 }
 

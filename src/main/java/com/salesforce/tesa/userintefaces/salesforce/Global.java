@@ -17,5 +17,9 @@ public class Global
             .located(By.xpath("//button[.//span[normalize-space()='Listo']]"));
     public static final Target SPINNER = Target.the("Spinner de carga")
             .located(By.xpath("//span[contains(text(), 'Cargando')]/ancestor::lightning-spinner"));
+    public static final Target BUTTON_FINALIZAR= Target.the("button Finalizar")
+            .located(By.xpath("//button[normalize-space(text())='Finalizar']"));
+    public static final Target BTN_GUARDAR_MODIF_SOLICITUD = Target.the("botón Guardar")
+            .located(By.xpath("//button[@title='Guardar']"));
 
 }

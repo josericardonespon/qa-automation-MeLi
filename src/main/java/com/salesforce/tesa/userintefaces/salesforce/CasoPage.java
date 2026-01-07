@@ -254,4 +254,7 @@ public class CasoPage {
     public static final Target LINK_IR_AL_CASO = Target.the("Link Ir al caso")
             .located(By.xpath("//a[normalize-space(text())='Ir al caso']"));
 
+    public static final Target NUMERO_CASO = Target.the("número de caso")
+            .locatedBy("//flexipage-field[@data-field-id='RecordCaseNumberField']//lightning-formatted-text");
+
 }

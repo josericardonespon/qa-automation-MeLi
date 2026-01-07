@@ -1,14 +1,13 @@
 package com.salesforce.tesa.stepdefinitions;
 
-import com.google.inject.Inject;
 import com.salesforce.tesa.tasks.CambiarRolTask;
+import com.salesforce.tesa.tasks.CerrarSesionTask;
 import com.salesforce.tesa.tasks.InicioSesionTask;
-import com.salesforce.tesa.utils.Constants;
-import com.salesforce.tesa.utils.Context;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 
+import io.cucumber.java.es.Y;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.ensure.Ensure;
 
@@ -36,11 +35,34 @@ public class InicioSesionStep {
         );
     }
 
+    @Dado("Se cierra sesion e inicia sesión como {string} en MeLi")
+    public void elUsuarioCambiaDeRol(String rol) {
+        // Cierra sesion
+        theActorInTheSpotlight().attemptsTo(CerrarSesionTask.cerrarSesion());
+        elUsuarioAdminHaIniciaSesion();
+        accedeALaPaginaPrincipalDeLaORG();
+        elUsuarioAdminHaIniciaSesionComo(rol);
+        // Inicia sesion con el nuevo rol que le enviamos por parametro
+        //OnStage.theActorInTheSpotlight().attemptsTo(InicioSesionTask.inicioSesionConRol(rol));
+    }
+
     @Dado("que el rol {string} ha iniciado sesión en MeLi")
     public void rolIniciaSesion(String rol) {
         elUsuarioAdminHaIniciaSesion();
         accedeALaPaginaPrincipalDeLaORG();
         elUsuarioAdminHaIniciaSesionComo(rol);
+    }
+
+    @Y("Se cierra sesion e inicia sesión con usuario asignado a la solicitud")
+    public void seCierraSesionEIniciaSesionComoUsuarioAsignadoAlaSolicitud() {
+        String usuarioAsignado = theActorInTheSpotlight().recall("usuario_asignado");
+        if (usuarioAsignado.equals("Data Entry: Interno")) {
+            usuarioAsignado = "Data Entry Interno";
+        }
+        theActorInTheSpotlight().attemptsTo(CerrarSesionTask.cerrarSesion());
+        elUsuarioAdminHaIniciaSesion();
+        accedeALaPaginaPrincipalDeLaORG();
+        elUsuarioAdminHaIniciaSesionComo(usuarioAsignado);
     }
 
 }

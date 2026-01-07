@@ -1,6 +1,7 @@
 package com.salesforce.tesa.tasks;
 
 import com.salesforce.tesa.interactions.*;
+import com.salesforce.tesa.userintefaces.salesforce.CasoPage;
 import com.salesforce.tesa.utils.CargarArchivoUtil;
 import com.salesforce.tesa.utils.FechaUtil;
 import com.salesforce.tesa.utils.Users;
@@ -266,7 +267,9 @@ public class CrearCasoTask {
             actor.attemptsTo(
                     EsperarInteraction.por(2000),
                     HacerClickInteraction.on(LINK_IR_AL_CASO).withOptions(30, true),
-                    Switch.toParentFrame()
+                    Switch.toParentFrame(),
+                    WaitUntil.the(BUTTON_NEW_EVENT, WebElementStateMatchers.isClickable()).forNoMoreThan(30).seconds(),
+                    ObtenerUrlInteraction.obtenerUrl("url_caso_meli")
             );
         }
     }
